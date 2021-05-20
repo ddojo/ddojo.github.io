@@ -3,7 +3,7 @@
 
 # Was?
 Ein monatliches Treffen um  **gemeinsam**, **hands-on** Datenanalyse zu **trainieren**.
-Jede und jeder der sich für Datenanlyse interessiert ist bei uns willkommen! Wir haben einen [Code of Conduct](./CodeOfConduct) an den wir uns halten.
+Jede und jeder der sich für Datenanlyse interessiert ist bei uns willkommen! Wir haben einen [Code of Conduct](./de_CodeOfConduct) an den wir uns halten.
 
 Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
 
