@@ -1,3 +1,4 @@
+<div style="float:right"><b><a href="de_CodeOfConduct">DE</a> | EN</b></div>
 # Code of Conduct
 
 ## Contact
