@@ -4,6 +4,11 @@ You can use the [editor on GitHub](https://github.com/ddojo/ddojo.github.io/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+### Topics
+Each event we will analyze a different dataset. We might use different tools to address different questions about this data. You can add suggestions for datasets/questions/tools to the pad or look beforehand what others have suggested.
+
+{% include_relative topics.md %}
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
