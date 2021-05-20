@@ -4,7 +4,7 @@
 Monthly meeting to do **collaborative**, **hands-on** data analytics **training**.
 We strive to be an open and inclusive community, everyone is welcome! We have a [code of conduct](./CodeOfConduct) that we adhere to.
 
-Everyone is welcome to join, whether you are a student, researcher or practitioner from industry.
+Everyone is welcome to join, whether you are a student, researcher or practitioner from industry. Also all experience levels, backgrounds and tool preferences are welcome!
 
 # When and Where
 On the second Thursday of each month at 5 pm online
@@ -31,6 +31,10 @@ We envision a process similar to the one described as [RandoriKata](https://codi
  - They start from scratch, doing baby steps and explaining everything they do to the audiance
  - After a fixed time period (e.g. 3 or 5 minutes) the roles change, the copilot becomes the driver, someone from the audiance becomes copilot
  - Everyone present is expected to follow what is going on, and make helpful suggestions
+
+## Will the Data Dojo be in English or German?
+
+The language of the session depends on the participants. Again we want to be as inclusive as possible. In case there are some participants who can't speak English and others who can't speak German we will split up into sub-groups early.
 
 # Topics
 Each event we will analyze a different dataset. We might use different tools to address different questions about this data. You can add suggestions for datasets/questions/tools to the pad or look beforehand what others have suggested.
