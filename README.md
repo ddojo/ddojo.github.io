@@ -51,7 +51,7 @@ Each event we will analyze a different dataset. We might use different tools to 
 # ESF-ZDEX
 
 Data Dojo Würzburg is supported by the ESF ZDEX project.
-<img src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png"/>
+<img alt="ESF ZDEX Logo" src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png" style="max-width: 500px"/>
 
 # Logo
 The logo is derived from the one used by HackyHour Würzburg (with kind permission).
