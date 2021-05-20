@@ -1,3 +1,4 @@
+<div style="float:right"><b><a href="de">DE</a> | EN</b></div>
 # Data Dojo Würzburg
 
 # About
