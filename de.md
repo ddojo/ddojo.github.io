@@ -54,13 +54,13 @@ Data Dojo Würzburg wird vom <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/
 <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/"><img alt="ESF ZDEX Logo" src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png" style="width: 100%; max-width: 500px"/></a>
 
 # Logo
-The logo is derived from the one used by HackyHour Würzburg (with kind permission).
-It uses a public domain <a href="https://thenounproject.com/search/?q=hackathon&i=6324">icon</a> 
-and the [tori gate icon](https://thenounproject.com/icon/2579080/) by [tulpahn](https://thenounproject.com/tulpahn) available under [CC-BY](https://creativecommons.org/licenses/by/3.0/us/legalcode).
-Colors are the corporate design colors from the University of Würzburg.
+Das Logo ist vom HackyHour Würzburg Logo abgeleitet.
+Es verwendet ein public domain <a href="https://thenounproject.com/search/?q=hackathon&i=6324">Icon</a> 
+und das [Tori Gate Icon](https://thenounproject.com/icon/2579080/) von [tulpahn](https://thenounproject.com/tulpahn) unter [CC-BY Lizenz](https://creativecommons.org/licenses/by/3.0/us/legalcode).
+Die Farben entsprechen dem Corporate Design der Universität Würzburg.
 
 <img alt="Data Dojo Logo. Two persons sitting bent over their computers under a tori gate." src="data-dojo-logo.svg" width="300px" />
 
-# License
-The content of this website is available under [CC0](LICENSE).
-This website uses the [cayman template](https://github.com/pages-themes/cayman) which is also available under [CC0](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
+# Lizenz
+Der Inhalt dieser Website steht unter einer [CC0 Lizenz](LICENSE).
+Die Webseite verwendet das [Cayman Template](https://github.com/pages-themes/cayman) welches ebenfalls unter [CC0 Lizenz](https://creativecommons.org/publicdomain/zero/1.0/legalcode) steht.
