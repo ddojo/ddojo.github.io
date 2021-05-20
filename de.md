@@ -5,7 +5,7 @@
 Ein monatliches Treffen um  **gemeinsam**, **hands-on** Datenanalyse zu **trainieren**.
 Jede und jeder der sich für Datenanlyse interessiert ist bei uns willkommen! Wir haben einen [Code of Conduct](./CodeOfConduct) an den wir uns halten.
 
-Egal ob Studentin, Wissenschaftlerin oder Anwenderin in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
+Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
 
 # Wann und wo?
 Jeweils am zweiten Donnerstag des Monats um 17 Uhr in Zoom (online).
@@ -26,32 +26,32 @@ Jeweils am zweiten Donnerstag des Monats um 17 Uhr in Zoom (online).
 
 ## Was bedeutet Coding-Dojo-Style?
 
-We envision a process similar to the one described as [RandoriKata](https://codingdojo.org/RandoriKata/) but tailored towards data analysis rather than programming. So roughly:
- - After deciding on a dataset, question and tool and splitting into small sub-groups of ~5 people
- - Two people step up to the keyboard and begin analyzing the data as driver (the one typing and clicking) and copilot (giving instructions to the driver)
- - They start from scratch, doing baby steps and explaining everything they do to the audiance
- - After a fixed time period (e.g. 3 or 5 minutes) the roles change, the copilot becomes the driver, someone from the audiance becomes copilot
- - Everyone present is expected to follow what is going on, and make helpful suggestions
+Wir verwenden ein Verfahren ähnlich der [RandoriKata](https://codingdojo.org/RandoriKata/) jedoch zugeschnitten auf Datenanalyse statt Programmierung:
+ - Zunächst wird ein Datensatz, ein Tool und eine Fragestellung ausgewählt und die Teilnehmer\*innen in Kleingruppen (ca. 5 Personen) eingeteilt
+ - Zwei Personen beginnen gemeinsam die Daten zu analysieren. Eine Person ist Fahrer\*in (tippt und klickt) und die andere Co-Pilot\*in (gibt Anweisungen)
+ - Sie fangen von vorne an, machen kleine Schritte und erklären den Anwesenden alles
+ - Nach einer vorgegebenen Zeit (z.B. 3 oder 5 Minuten) rotieren die Rollen, Co-Pilot\*in wird Fahrer\*in und eine neue Person wird Co-Pilot\*in
+ - Alle Anwesenden verfolgen was passiert und machen hilfreiche Vorschläge
 
-## Will the Data Dojo be in English or German?
+## Wird beim Data Dojo Deutsch oder Englisch gesprochen?
 
-The language of the session depends on the participants. Again we want to be as inclusive as possible. In case there are some participants who can't speak English and others who can't speak German we will split up into sub-groups early.
+Das hängt von den Teilneher\*innen ab. Wir wollen möglichst offen für alle sein. Sollte der Fall eintreten, dass manche kein Deutsch und andere kein Englisch können teilen wir die Gruppen frühzeitig entsprechend ein.
 
-# Topics
-Each event we will analyze a different dataset. We might use different tools to address different questions about this data. You can add suggestions for datasets/questions/tools to the pad or look beforehand what others have suggested.
+# Themen
+Bei jedem Treffen wird ein neuer Datensatz analysiert. Dabei kommen verschiedene Tools zum Einsatz und es werden unterschiedlichste Fragestellungen addressiert. Jeder kann Vorschläge für Datensätze, Fragestellungen und Tools in das Pad eintragen und nachschauen was andere vorgeschlagen haben.
 
 {% include_relative topics.md %}
 
 # Inspiration
-- [TidyTuesday](https://github.com/rfordatascience/tidytuesday): A weekly social data project in R.
-- [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/): The idea of using the "dojo style" to train your (programming) skills.
-- [ML Katas](https://www.bpesquet.fr/mlkatas): Interactive notebooks to train Machine Learning skills on small specific problems.
-- [HackyHour](https://hackyhour.github.io/Wuerzburg): A social get-together to solve compuntational problems and explore computers in a fun and interactive manner.
+- [TidyTuesday](https://github.com/rfordatascience/tidytuesday): Jede Woche gibt es einen neuen öffentlichen Datensatz.
+- [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/): Dort wird die Coding Dojo Idee schön erklärt.
+- [ML Katas](https://www.bpesquet.fr/mlkatas): Interaktive Notebooks mit Machine Learning Aufgaben.
+- [HackyHour](https://hackyhour.github.io/Wuerzburg): Ein soziales Treffen um gemeinsam Probleme mit Computermethoden zu lösen oder einfach Spaß damit zu haben.
 
 # ESF-ZDEX
 
-Data Dojo Würzburg is supported by the ESF ZDEX project.
-<img alt="ESF ZDEX Logo" src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png" style="width: 100%; max-width: 500px"/>
+Data Dojo Würzburg wird vom <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/">ESF ZDEX Projekt</a> unterstützt.
+<a href="https://www.uni-wuerzburg.de/sft/esf-zdex/"><img alt="ESF ZDEX Logo" src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png" style="width: 100%; max-width: 500px"/></a>
 
 # Logo
 The logo is derived from the one used by HackyHour Würzburg (with kind permission).
