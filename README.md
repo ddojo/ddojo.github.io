@@ -16,10 +16,10 @@ Each event we will analyze a different dataset. We might use different tools to 
 {% include_relative topics.md %}
 
 # Inspiration
-- [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
-- [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/)
-- [ML Katas](https://www.bpesquet.fr/mlkatas).
-- [HackyHour](https://hackyhour.github.io/Wuerzburg) - if you like Data Dojo you might like HackyHour as well!
+- [TidyTuesday](https://github.com/rfordatascience/tidytuesday): A weekly social data project in R.
+- [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/): The idea of using the "dojo style" to train your (programming) skills.
+- [ML Katas](https://www.bpesquet.fr/mlkatas): Interactive notebooks to train Machine Learning skills on small specific problems.
+- [HackyHour](https://hackyhour.github.io/Wuerzburg): A social get-together to solve compuntational problems and explore computers in a fun and interactive manner.
 
 # Logo
 The logo is derived from the one used by HackyHour Würzburg (with kind permission).
