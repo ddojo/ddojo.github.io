@@ -10,9 +10,16 @@ On the second Thursday of each month at 5 pm online
 
 ### Attention! The Data Dojo will start as virtual only. We will move to a live format as soon as covid numbers allow it. Stay healthy!
 
+# Topics
+Each event we will analyze a different dataset. We might use different tools to address different questions about this data. You can add suggestions for datasets/questions/tools to the pad or look beforehand what others have suggested.
+
+{% include_relative topics.md %}
+
 # Inspiration
-[TidyTuesday](https://github.com/rfordatascience/tidytuesday), [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/), [ML Katas](https://www.bpesquet.fr/mlkatas).
-If you are interested in the Data Dojo you should also check out [HackyHour](https://hackyhour.github.io/Wuerzburg) which is not strictly focused on training your skills but rather helping people out that come with data analytical problems or having fun with computers.
+- [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+- [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/)
+- [ML Katas](https://www.bpesquet.fr/mlkatas).
+- [HackyHour](https://hackyhour.github.io/Wuerzburg) - if you like Data Dojo you might like HackyHour as well!
 
 # Logo
 The logo is derived from the one used by HackyHour Würzburg (with kind permission).
@@ -25,8 +32,3 @@ Colors are the corporate design colors from the University of Würzburg.
 # License
 The content of this website is available under [CC0](LICENSE).
 This website uses the [cayman template](https://github.com/pages-themes/cayman) which is also available under [CC0](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
-
-### Topics
-Each event we will analyze a different dataset. We might use different tools to address different questions about this data. You can add suggestions for datasets/questions/tools to the pad or look beforehand what others have suggested.
-
-{% include_relative topics.md %}
