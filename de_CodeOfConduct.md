@@ -1,3 +1,4 @@
+<div style="float:right"><b>DE | <a href="CodeOfConduct">EN</a></b></div>
 # Code of Conduct - Verhaltenskodex
 
 ## Kontakt
