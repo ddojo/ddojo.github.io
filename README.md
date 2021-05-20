@@ -1,3 +1,5 @@
+# Data Dojo Würzburg
+
 # About
 Monthly meeting to do **collaborative**, **hands-on** data analytics **training**.
 We strive to be an open and inclusive community, everyone is welcome! We have a [code of conduct](./CodeOfConduct) that we adhere to.
