@@ -27,7 +27,7 @@ It uses a public domain <a href="https://thenounproject.com/search/?q=hackathon&
 and the [tori gate icon](https://thenounproject.com/icon/2579080/) by [tulpahn](https://thenounproject.com/tulpahn) available under [CC-BY](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 Colors are the corporate design colors from the University of Würzburg.
 
-![Data Dojo Logo. Two persons sitting bent over their computers under a tori gate.](data-dojo-logo.svg "Logo HackyHour")
+<img alt="Data Dojo Logo. Two persons sitting bent over their computers under a tori gate." src="data-dojo-logo.svg" width="300px" />
 
 # License
 The content of this website is available under [CC0](LICENSE).
