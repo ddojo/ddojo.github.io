@@ -1,0 +1,68 @@
+
+
+```
+library(tidyverse)
+```
+ 
+```{R}
+sample(c("Franzi", "Selina", "Anne", "Helmut", "Markus"))
+```
+[1] "Franzi" "Selina" "Markus" "Helmut" "Anne"  
+
+```{R}
+# Get the Data
+
+# Read in with tidytuesdayR package 
+# Install from CRAN via: install.packages("tidytuesdayR")
+# This loads the readme and all the datasets for the week of interest
+
+# Either ISO-8601 date or year/week works!
+
+library(tidytuesdayR)
+
+tuesdata <- tidytuesdayR::tt_load('2021-04-20')
+
+netflix <- tuesdata$netflix
+
+head(netflix)
+dim(netflix)
+count(netflix, country, sort = TRUE) %>% tail()
+```
+
+## Welches Land produziert die längsten Filme?
+
+```{R}
+singleCountryEntry <- netflix %>% filter(!str_detect(country, ","))
+singleCountryEntry %>% count(country, sort=TRUE) 
+singleCountryEntry %>% group_by(country) %>% filter(type=="Movie") %>% 
+    separate(duration,c("duration","time_unit"),sep=" ") %>% mutate(duration = as.integer(duration)) %>%
+    summarise(longestFilm = max(duration), n = n()) %>% arrange(-n)
+
+netflix %>% separate(duration,c("duration","time_unit"),sep=" ") %>% mutate(duration = as.integer(duration)) %>%
+    filter(duration == max(duration)) %>% select(title)
+
+singleCountryEntry %>% group_by(country) %>% filter(type=="Movie") %>% filter(!str_detect(duration,"h"))
+
+
+singleCountryEntry %>% separate(duration,c("duration","time_unit"),sep=" ") %>% mutate(duration = as.integer(duration))  %>% filter(type=="Movie")%>%
+    group_by(country) %>% mutate(n=n()) %>% filter(duration == max(duration)) %>% select(country, title, duration, n) %>% arrange(-duration) %>%
+    filter(country %in% c("Germany", "West Germany", "East Germany"))
+```
+
+
+
+## Frage 2: Wie haben sich die dominanten Genres über die Zeit verändert? 
+```{R}
+#netflix$listed_in
+
+netflix %>% separate_rows(listed_in, sep = ", ") %>% count(release_year, listed_in, sort = TRUE) %>% 
+    mutate(listed_in=fct_lump(listed_in, 8)) %>%
+    ggplot(aes(x = release_year, y = n, fill = listed_in)) +
+    geom_col() + facet_wrap(~ listed_in, scale="free_y")
+```
+
+# Welcher Film nach 2000 ist schon ein Classic Movie?
+
+```{R}
+netflix %>% filter(str_detect(listed_in, "Classic Movie")) %>% arrange(-release_year) %>% select(title, release_year, listed_in, country)
+```
