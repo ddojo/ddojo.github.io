@@ -29,6 +29,9 @@ One of the most promising remote collaboration tools I found is VS Code with Liv
 ### Tools
 - R/tidyverse :+1: :+1:
 
+### Result
+[Exploration](./exploration)
+
 ## Participants
 > Please add your name to the list if you plan to come. And please remove it if you can not make it.
  - Markus 
