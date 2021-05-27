@@ -3,12 +3,6 @@
 ## Test Run
  - **When:** May 26<sup>th</sup>, 2021 at 5:00pm
  - **Where:** Zoom
- - **Zoom:** 
-Join Zoom Meeting
-https://uni-wuerzburg.zoom.us/j/97440222177?pwd=bm1TbmxEZmlWMlM1K1B5blhsQzJhZz09
-
-Meeting ID: 974 4022 2177
-Password: 371016
  - **Info:** [DataDojo Website](https://ddojo.github.io/)
 
 ## Collaborative Tools and Workflow
@@ -32,17 +26,8 @@ One of the most promising remote collaboration tools I found is VS Code with Liv
 - Kann man das Rating vorhersagen?
 - Welche Schauspieler*in ist am häufigsten zu sehen? 
 
-Live Share: https://prod.liveshare.vsengsaas.visualstudio.com/join?E6DF7467103DB87E53615EC4192E805317F6
-
 ### Tools
 - R/tidyverse :+1: :+1:
-- python
-- Excel :+1:
-
-### Skills
-- interactive maps :+1: :+1:
-- dashboards
-- animations :+1: :+1:
 
 ## Participants
 > Please add your name to the list if you plan to come. And please remove it if you can not make it.
@@ -50,7 +35,3 @@ Live Share: https://prod.liveshare.vsengsaas.visualstudio.com/join?E6DF7467103DB
  - Anne
  - Selina
  - Franzi
-
-## Cross Links
-
- - [next pad]
