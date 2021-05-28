@@ -9,6 +9,7 @@ Jede und jeder der sich für Datenanlyse interessiert ist bei uns willkommen! Wi
 # Wer?
 Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
 
+<small>Um die Lesbarkeit dieser Website zu verbessern, wird im Folgenden das generische Femininum verwendet. Wir weisen aber noch mal ausdrücklich darauf hin, dass alle Menschen unabhängig von Ihrer Geschlechtsidentität beim Data Dojo gleichermaßen willkommen sind.</small>
 
 # Wann und wo?
 Jeweils am zweiten Donnerstag des Monats um 17 Uhr in Zoom (online).
@@ -28,17 +29,17 @@ Jeweils am zweiten Donnerstag des Monats um 17 Uhr in Zoom (online).
 ## Was bedeutet Coding-Dojo-Style?
 
 Wir verwenden ein Verfahren das der [RandoriKata](https://codingdojo.org/RandoriKata/) ähnelt. Jedoch ist es auf Datenanalyse statt Programmierung zugeschnitten:
- - Die Teilnehmer\*innen bearbeiten in Kleingruppen (3-5 Personen) Fragestellungen zu einem vorgegebenen Datensatz
- - Es gibt drei Rollen welche die Teilnehmer\*innen reihum ausfüllen:
-   - Co-Pilot\*in: gibt die Anweisungen
-   - Fahrer\*in: führt die Anweisungen aus (tippt und klickt)
-   - Zuschauer\*innen: beraten und helfen bei Fragen
- - Co-Pilot\*in und Fahrer\*in gehen kleinschrittig vor und erklären genau was sie tun
- - Nach 5 Minuten werden die Rollen getauscht: Co-Pilot\*in wird Fahrer\*in und eine Zuschauer\*in wird Co-Pilot\*in, ...
+ - Die Teilnehmerinnen bearbeiten in Kleingruppen (3-5 Personen) Fragestellungen zu einem vorgegebenen Datensatz
+ - Es gibt drei Rollen welche die Teilnehmerinnen reihum ausfüllen:
+   - Co-Pilotin: gibt die Anweisungen
+   - Fahrerin: führt die Anweisungen aus (tippt und klickt)
+   - Zuschauerinnen: beraten und helfen bei Fragen
+ - Co-Pilotin und Fahrerin gehen kleinschrittig vor und erklären genau was sie tun
+ - Nach 5 Minuten werden die Rollen getauscht: Co-Pilotin wird Fahrerin und eine Zuschauerin wird Co-Pilotin, ...
 
 ## Wird beim Data Dojo Deutsch oder Englisch gesprochen?
 
-Das hängt von den Teilneher\*innen ab. Wir wollen möglichst offen für alle sein. Sollte der Fall eintreten, dass manche kein Deutsch und andere kein Englisch können teilen wir die Gruppen frühzeitig entsprechend ein.
+Das hängt von den Teilneherinnen ab. Wir wollen möglichst offen für alle sein. Sollte der Fall eintreten, dass manche kein Deutsch und andere kein Englisch können teilen wir die Gruppen frühzeitig entsprechend ein.
 
 # Themen
 Bei jedem Treffen wird ein neuer Datensatz analysiert. Dabei kommen verschiedene Tools zum Einsatz und es werden unterschiedlichste Fragestellungen addressiert. Jeder kann Vorschläge für Datensätze, Fragestellungen und Tools in das Pad eintragen und nachschauen was andere vorgeschlagen haben.
