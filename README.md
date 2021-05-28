@@ -15,22 +15,20 @@ On the second Thursday of each month at 5 pm online
 
 # Process
 
-| 3 h | Example Process |
-|-------|------|
-| 15 min | welcome, ice breaker |
-| 15 min | select datenset  |
-| 15 min | exploration, questions |
-| 15 min | split in small sub-groups |
-| 90 min | analyze, coding-dojo-style |
-| 30 min | present results, recap |
+| 2.5 h  | Example Process                                  |
+| ------ | ------------------------------------------------ |
+| 15 min | welcome, ice breaker                             |
+| 15 min | initial exploration, questions                   |
+| 90 min | analyze, coding-dojo-style (in small sub-groups) |
+| 30 min | present results, recap                           |
 
 ## What is coding-dojo style?
 
 We envision a process similar to the one described as [RandoriKata](https://codingdojo.org/RandoriKata/) but tailored towards data analysis rather than programming. So roughly:
- - After deciding on a dataset, question and tool and splitting into small sub-groups of ~5 people
+ - After deciding on a dataset, question and tool and splitting into small sub-groups of 3-5 people
  - Two people step up to the keyboard and begin analyzing the data as driver (the one typing and clicking) and copilot (giving instructions to the driver)
- - They start from scratch, doing baby steps and explaining everything they do to the audiance
- - After a fixed time period (e.g. 3 or 5 minutes) the roles change, the copilot becomes the driver, someone from the audiance becomes copilot
+ - They start from scratch, doing small steps and explaining everything they do to the audiance
+ - After 5 minutes the roles change, the copilot becomes the driver, someone from the audiance becomes copilot
  - Everyone present is expected to follow what is going on, and make helpful suggestions
 
 ## Will the Data Dojo be in English or German?

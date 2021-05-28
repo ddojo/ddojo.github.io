@@ -5,7 +5,10 @@
 Ein monatliches Treffen um  **gemeinsam**, **hands-on** Datenanalyse zu **trainieren**.
 Jede und jeder der sich für Datenanlyse interessiert ist bei uns willkommen! Wir haben einen [Code of Conduct](./de_CodeOfConduct) an den wir uns halten.
 
+
+# Wer?
 Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
+
 
 # Wann und wo?
 Jeweils am zweiten Donnerstag des Monats um 17 Uhr in Zoom (online).
@@ -15,23 +18,23 @@ Jeweils am zweiten Donnerstag des Monats um 17 Uhr in Zoom (online).
 
 # Ablauf
 
-| 3 h | Beispielablauf |
-|-------|------|
-| 15 min | Willkommen, Ice Breaker |
-| 15 min | Datensatz auswählen  |
-| 15 min | Exploration, Fragestellung |
-| 15 min | Einteilung in Kleingruppen |
-| 90 min | Analyse, Coding-Dojo-Style |
-| 30 min | Vorstellung der Ergebnisse, Zusammenfassung |
+| 2,5 h  | Beispielablauf                               |
+| ------ | -------------------------------------------- |
+| 15 min | Willkommen, Ice Breaker                      |
+| 15 min | Datensatz Vorstellung, Fragestellungen       |
+| 90 min | Analyse, Coding-Dojo-Style (in Kleingruppen) |
+| 30 min | Vorstellung der Ergebnisse, Zusammenfassung  |
 
 ## Was bedeutet Coding-Dojo-Style?
 
-Wir verwenden ein Verfahren ähnlich der [RandoriKata](https://codingdojo.org/RandoriKata/) jedoch zugeschnitten auf Datenanalyse statt Programmierung:
- - Zunächst wird ein Datensatz, ein Tool und eine Fragestellung ausgewählt und die Teilnehmer\*innen in Kleingruppen (ca. 5 Personen) eingeteilt
- - Zwei Personen beginnen gemeinsam die Daten zu analysieren. Eine Person ist Fahrer\*in (tippt und klickt) und die andere Co-Pilot\*in (gibt Anweisungen)
- - Sie fangen von vorne an, machen kleine Schritte und erklären den Anwesenden alles
- - Nach einer vorgegebenen Zeit (z.B. 3 oder 5 Minuten) rotieren die Rollen, Co-Pilot\*in wird Fahrer\*in und eine neue Person wird Co-Pilot\*in
- - Alle Anwesenden verfolgen was passiert und machen hilfreiche Vorschläge
+Wir verwenden ein Verfahren das der [RandoriKata](https://codingdojo.org/RandoriKata/) ähnelt. Jedoch ist es auf Datenanalyse statt Programmierung zugeschnitten:
+ - Die Teilnehmer\*innen bearbeiten in Kleingruppen (3-5 Personen) Fragestellungen zu einem vorgegebenen Datensatz
+ - Es gibt drei Rollen welche die Teilnehmer\*innen reihum ausfüllen:
+   - Co-Pilot\*in: gibt die Anweisungen
+   - Fahrer\*in: führt die Anweisungen aus (tippt und klickt)
+   - Zuschauer\*innen: beraten und helfen bei Fragen
+ - Co-Pilot\*in und Fahrer\*in gehen kleinschrittig vor und erklären genau was sie tun
+ - Nach 5 Minuten werden die Rollen getauscht: Co-Pilot\*in wird Fahrer\*in und eine Zuschauer\*in wird Co-Pilot\*in, ...
 
 ## Wird beim Data Dojo Deutsch oder Englisch gesprochen?
 

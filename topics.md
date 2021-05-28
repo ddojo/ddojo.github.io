@@ -1,3 +1,4 @@
-| i  | Date       | Summary      | Pad |
-| --:| ---------- |--------------| ----------:|
-| 0 | 2021-05-26 | Test Run | [pad](https://hackmd.io/FUJE2rSHRHiqu-v1Vgg-gg) |
+|    i | Date       | Summary                                                                                                               |                                                                                 Pad/Result |
+| ---: | ---------- | --------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------: |
+|    1 | 2021-06-10 | See pad &rarr;                                                                                                        |                                            [pad](https://hackmd.io/qUl1BnMBRCGJpGR6uuFiQA) |
+|    0 | 2021-05-26 | Test Run, [Netflix Titles](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-04-20/readme.md) | [pad](https://hackmd.io/FUJE2rSHRHiqu-v1Vgg-gg), [result](sessions/00_netflix/exploration) |
