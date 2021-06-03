@@ -8,7 +8,7 @@ We strive to be an open and inclusive community, everyone is welcome! We have a 
 Everyone is welcome to join, whether you are a student, researcher or practitioner from industry. Also all experience levels, backgrounds and tool preferences are welcome!
 
 # When and Where
-On the second Thursday of each month at 5 pm online
+On the second Thursday of each month at 5:30 pm online
 <!-- at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094). -->
 
 ### Attention! The Data Dojo will start as virtual only. We will move to a live format as soon as covid numbers allow it. Stay healthy!
