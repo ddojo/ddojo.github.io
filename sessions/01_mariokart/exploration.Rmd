@@ -1,0 +1,111 @@
+# Load data and libraries
+```{r}
+tuesdata <- tidytuesdayR::tt_load(2021, week = 22)
+records <- tuesdata$records
+drivers <- tuesdata$drivers
+```
+
+```{r}
+library(tidyverse)
+library(ggrepel)
+library(lubridate)
+theme_set(theme_light())
+```
+
+# Exploration
+```{r}
+knitr::kable(head(records))
+```
+
+## Records by track over time
+```{r}
+records %>%
+	filter(type == "Three Lap") %>%
+	filter(shortcut == "No") %>%
+	ggplot(aes(x=date, y=time, color=track)) + geom_line() +
+	facet_wrap(~ track, scale="free_y") + theme(legend.position="none") +
+	#geom_text_repel(aes(label=player)) +
+	NULL
+```
+
+## Number of record entries by player
+
+```{r}
+records %>%
+	mutate(player=fct_lump(player,20)) %>%
+	mutate(player=fct_rev(fct_infreq(player))) %>%
+	ggplot(aes(y=player, fill=shortcut)) + geom_bar() +
+	facet_wrap(~type) + scale_fill_brewer(palette="Set1")
+```
+
+## How many records have been broken since March 2020?
+
+```{r}
+records %>%
+	filter(date>ymd('2020-02-29')) %>%
+	count(track, sort=T)
+```
+
+Only for one track there was no new record since then:
+```{r}
+tracks_with_new_record <- records %>%
+	filter(date>ymd('2020-02-29')) %>%
+	pull(track) %>%
+	unique
+records %>% select(track) %>% unique %>% filter(!(track %in% tracks_with_new_record))
+```
+
+Better way to get there is sorting by date:
+```{r}
+records %>%
+	group_by(track) %>%
+	top_n(1, date) %>%
+	ungroup %>%
+	arrange(date)
+```
+
+## Answer some of the questions (with plots)
+
+- Which track is the fastest?
+- For which track did the world record improve the most?
+- For how many tracks have shortcuts been discovered?
+
+### Fastest track (with and without shortcuts)
+```{r}
+records %>%
+	group_by(track, shortcut) %>%
+	summarize(record=min(time)) %>%
+	ungroup %>%
+	mutate(
+		nosc_record = if_else(shortcut=="No", record, 0),
+		track = fct_reorder(track, nosc_record, max)
+	) %>%
+	ggplot(aes(y=track, x=record)) +
+		geom_col() +
+		facet_wrap(~shortcut)
+```
+
+There are shortcuts for most tracks (all except 4)
+```{r}
+records %>%
+	group_by(track) %>%
+	count(shortcut) %>%
+	pivot_wider(names_from=shortcut, values_from=n, values_fill=0) %>%
+	filter(Yes==0)
+```
+
+### Largest improvement without shortcuts
+
+```{r}
+
+
+### Number of new records per month
+
+```{r}
+records %>%
+	mutate(month=floor_date(date, unit="month")) %>%
+	count(month) %>%
+	arrange(month) %>%
+	mutate(cum = cumsum(n)) %>%
+	ggplot(aes(x=month, y=cum)) + geom_line()
+```
