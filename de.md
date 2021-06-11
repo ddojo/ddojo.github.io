@@ -12,18 +12,18 @@ Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen,
 <small>Um die Lesbarkeit dieser Website zu verbessern, wird im Folgenden das generische Femininum verwendet. Wir weisen aber noch mal ausdrücklich darauf hin, dass alle Menschen unabhängig von Ihrer Geschlechtsidentität beim Data Dojo gleichermaßen willkommen sind.</small>
 
 # Wann und wo?
-Jeweils am zweiten Donnerstag des Monats um 17:30 Uhr in Zoom (online).
+Jeweils am zweiten Donnerstag des Monats um 18:00 Uhr in Zoom (online).
 <!-- at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094). -->
 
-### Achtung! Aktuell findet das Data Dojo rein online statt. Wenn es die Coronazahlen zulassen möchten wir auf ein Live-Format umsteigen.
+### Achtung! Wir haben die endgültige Uhrzeit und Dauer noch nicht gefunden. Beides kann sich also von Monat zu Monat verändern bis wir die Werte gefunden haben die für alle Teilnehmerinnen am besten passt. Aktuell findet das Data Dojo rein online statt. Wenn es die Coronazahlen zulassen möchten wir evtl. auf ein Live-Format umsteigen.
 
 # Ablauf
 
-| 2,5 h  | Beispielablauf                               |
+| 2 h  | Beispielablauf                               |
 | ------ | -------------------------------------------- |
 | 15 min | Willkommen, Ice Breaker                      |
 | 15 min | Datensatz Vorstellung, Fragestellungen       |
-| 90 min | Analyse, Coding-Dojo-Style (in Kleingruppen) |
+| 60 min | Analyse, Coding-Dojo-Style (in Kleingruppen) |
 | 30 min | Vorstellung der Ergebnisse, Zusammenfassung  |
 
 ## Was bedeutet Coding-Dojo-Style?
