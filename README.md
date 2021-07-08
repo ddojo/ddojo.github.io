@@ -9,6 +9,9 @@ Everyone is welcome to join, whether you are a student, researcher or practition
 
 # When and Where
 On the second Thursday of each month at 6:00 pm online
+
+See the [current pad](https://go.uniwue.de/ddojo-pad) for details and zoom link.
+
 <!-- at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094). -->
 
 ### Attention! We have not determined the perfect start time and duration, yet. So expect those to change from month to month until we settle for the time that works best for most participants. Furthermore, the Data Dojo starts as virtual only. We might move to a live format as soon as covid numbers allow it. Stay healthy!
