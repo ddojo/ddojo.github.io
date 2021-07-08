@@ -13,6 +13,9 @@ Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen,
 
 # Wann und wo?
 Jeweils am zweiten Donnerstag des Monats um 18:00 Uhr in Zoom (online).
+
+Details und den Zoom Link gibt es im [aktuellen Pad](https://go.uniwue.de/ddojo-pad).
+
 <!-- at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094). -->
 
 ### Achtung! Wir haben die endgültige Uhrzeit und Dauer noch nicht gefunden. Beides kann sich also von Monat zu Monat verändern bis wir die Werte gefunden haben die für alle Teilnehmerinnen am besten passt. Aktuell findet das Data Dojo rein online statt. Wenn es die Coronazahlen zulassen möchten wir evtl. auf ein Live-Format umsteigen.
