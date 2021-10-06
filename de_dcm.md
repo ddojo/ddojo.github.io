@@ -25,7 +25,8 @@ Das entscheidet die jeweilige Expert\*in. Das kann sich also immer ändern, wird
 
 ## Themen
 
-Es gibt viele Werkzeuge und Sprachen um Daten zu analysieren. Jede hat besondere Stärken und Schwächen. Wir lassen uns jeweils von Experten zeigen wie sie ihr Werkzeug jeweils optimal verwenden. Dabei wird jeweils ein echter Datensatz von Grund auf live analysiert. Den Datensatz sucht die jeweilige Expert\*in selbst aus.
+Es gibt viele Werkzeuge und Sprachen um Daten zu analysieren. Jede hat besondere Stärken und Schwächen. Wir lassen uns jeweils von Expert\*innen zeigen wie sie ihr Werkzeug optimal verwenden. Dabei wird immer ein echter Datensatz von Grund auf live analysiert.
+Außerdem gibt es die Möglichkeit mit den Expert\*innen und anderen Teilnehmer\*innen zu interagieren, zu diskutieren und Fragne zu stellen.
 
 Zu den Tools zu denen bereits Events geplant sind gehören:
 - R
