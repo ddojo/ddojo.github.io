@@ -7,7 +7,7 @@ Eine virtuelle Veranstaltungsreihe bei der Datenanalyse Expert\*innen live einen
 Es gilt wie immer unser [Code of Conduct](./de_CodeOfConduct).
 
 ## Wer?
-Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
+Teilnehmen kann jede\*r, egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
 
 Wenn du interesse hast selbst zu präsentieren, melde dich einfach bei [Markus](mailto:markus.ankenbrand@uni-wuerzburg.de).
 
