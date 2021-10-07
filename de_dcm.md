@@ -9,7 +9,7 @@ Es gilt wie immer unser [Code of Conduct](./de_CodeOfConduct).
 ## Wer?
 Teilnehmen kann jede\*r, egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
 
-Wenn du interesse hast selbst zu präsentieren, melde dich einfach bei [Markus](mailto:markus.ankenbrand@uni-wuerzburg.de).
+Wenn du Interesse hast selbst zu präsentieren, melde dich einfach bei [Markus](mailto:markus.ankenbrand@uni-wuerzburg.de).
 
 ## Wann und wo?
 
@@ -26,7 +26,7 @@ Das entscheidet die jeweilige Expert\*in. Das kann sich also immer ändern, wird
 ## Themen
 
 Es gibt viele Werkzeuge und Sprachen um Daten zu analysieren. Jede hat besondere Stärken und Schwächen. Wir lassen uns jeweils von Expert\*innen zeigen wie sie ihr Werkzeug optimal verwenden. Dabei wird immer ein echter Datensatz von Grund auf live analysiert.
-Außerdem gibt es die Möglichkeit mit den Expert\*innen und anderen Teilnehmer\*innen zu interagieren, zu diskutieren und Fragne zu stellen.
+Außerdem gibt es die Möglichkeit mit den Expert\*innen und anderen Teilnehmer\*innen zu interagieren, zu diskutieren und Fragen zu stellen.
 
 Zu den Tools zu denen bereits Events geplant sind gehören:
 - R
