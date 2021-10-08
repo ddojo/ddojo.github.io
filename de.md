@@ -22,7 +22,7 @@ Details und den Zoom Link gibt es im [aktuellen Pad](https://go.uniwue.de/ddojo-
 
 # Ablauf
 
-| 2 h  | Beispielablauf                               |
+| 2 h    | Beispielablauf                               |
 | ------ | -------------------------------------------- |
 | 15 min | Willkommen, Ice Breaker                      |
 | 15 min | Datensatz Vorstellung, Fragestellungen       |
@@ -66,7 +66,7 @@ Es verwendet ein public domain <a href="https://thenounproject.com/search/?q=hac
 und das [Tori Gate Icon](https://thenounproject.com/icon/2579080/) von [tulpahn](https://thenounproject.com/tulpahn) unter [CC-BY Lizenz](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 Die Farben entsprechen dem Corporate Design der Universität Würzburg.
 
-<img alt="Data Dojo Logo. Two persons sitting bent over their computers under a tori gate." src="data-dojo-logo.svg" width="300px" />
+<img alt="Data Dojo Logo. Two persons sitting bent over their computers under a tori gate." src="img/data-dojo-logo.svg" width="300px" />
 
 # Lizenz
 Der Inhalt dieser Website steht unter einer [CC0 Lizenz](LICENSE).

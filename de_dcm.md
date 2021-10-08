@@ -1,5 +1,6 @@
 ---
 title: "Data Crunch Magic"
+logo: "/img/dcm_logo.png"
 ---
 
 <!-- <div style="float:right"><b>DE | <a href="/">EN</a></b></div> -->
@@ -38,7 +39,7 @@ Zu den Tools zu denen bereits Events geplant sind gehören:
 - JavaScript
 - Microsoft PowerBI
 
-<img src="./dcm.png"/>
+<img src="./img/dcm.png"/>
 
 ## Weitere Veranstaltungen
 
