@@ -7,9 +7,9 @@ Eine virtuelle Veranstaltungsreihe bei der Datenanalyse Expert\*innen live einen
 Es gilt wie immer unser [Code of Conduct](./de_CodeOfConduct).
 
 ## Wer?
-Teilnehmen kann jede\*r, egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
+Teilnehmen kann jede\*r, egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Dank der Unterstützung durch das ESF-ZDEX Projekt können auch Mitarbeiter\*innen von Unternehmen kostenfrei an den Veranstaltungen teilnehmen, bitte die [Details unten unter ESF-ZDEX](#esf-zdex) beachten.
 
-Wenn du Interesse hast selbst zu präsentieren, melde dich einfach bei [Markus](mailto:markus.ankenbrand@uni-wuerzburg.de).
+Wenn Sie Interesse haben selbst zu präsentieren, melden Sie sich einfach bei [Markus Ankenbrand](mailto:markus.ankenbrand@uni-wuerzburg.de).
 
 ## Wann und wo?
 
@@ -46,6 +46,12 @@ Zu den Tools zu denen bereits Events geplant sind gehören:
 ## ESF-ZDEX
 
 Data Crunch Magic wird vom <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/">ESF ZDEX Projekt</a> unterstützt.
+Das heißt, falls Ihr Unternehmen bereits Partner im ESF-ZDEX Projekt ist brauchen Sie nichts weiter zu tun als am Anfang der Veranstaltung Markus Ankenbrand Bescheid zu geben.
+Er kümmert sich dann um den Aktionsnachweis und ggf. den einmaligen Teilnehmendenfragebogen.
+Sollten Ihr Unternehmen noch kein Partner im ESF-ZDEX Projekt sein können Sie sich [hier](https://www.uni-wuerzburg.de/sft/esf-zdex/) informieren und anmelden. 
+Das Angebot ist für KMU in Nordbayern kostenlos und erfordert lediglich das einmalige Ausfüllen einer Kooperationsvereinbarung.
+Bei allen Fragen steht ihnen [Markus Ankenbrand](mailto:markus.ankenbrand@uni-wuerzburg.de) sehr gerne zur Verfügung.
+
 <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/"><img alt="ESF ZDEX Logo" src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png" style="width: 100%; max-width: 500px"/></a>
 
 ## Lizenz
