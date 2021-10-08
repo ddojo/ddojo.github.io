@@ -1,5 +1,6 @@
 ---
 title: "Data Crunch Magic"
+description: "Let's learn data analytics skills from experts!"
 logo: "/img/dcm_logo.png"
 ---
 
