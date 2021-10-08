@@ -1,5 +1,8 @@
+---
+title: "Data Crunch Magic"
+---
+
 <!-- <div style="float:right"><b>DE | <a href="/">EN</a></b></div> -->
-# Data Crunch Magic
 
 ## Was?
 Eine virtuelle Veranstaltungsreihe bei der Datenanalyse Expert\*innen live einen Datensatz analysieren. Dabei demonstrieren sie jeweils wie man ein bestimmtes Tool oder eine Programmiersprache optimal einsetzt. Alle Teilnehmer\*innen sind herzlich eingeladen mit den Vortragenden zu interagieren, mitzumachen und anschließend zu diskutieren.
