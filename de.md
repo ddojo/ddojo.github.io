@@ -56,6 +56,7 @@ Bei jedem Treffen wird ein neuer Datensatz analysiert. Dabei kommen verschiedene
 - [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/): Dort wird die Coding Dojo Idee schön erklärt.
 - [ML Katas](https://www.bpesquet.fr/mlkatas): Interaktive Notebooks mit Machine Learning Aufgaben.
 - [HackyHour](https://hackyhour.github.io/Wuerzburg): Ein soziales Treffen um gemeinsam Probleme mit Computermethoden zu lösen oder einfach Spaß damit zu haben.
+- [Data Crunch Magic](https://ddojo.github.io/de_dcm): Eine virtuelle Veranstaltungsreihe bei der Datenanalyse Expert\*innen live mit ihrem Lieblingstool Daten analysieren.
 
 # ESF-ZDEX
 

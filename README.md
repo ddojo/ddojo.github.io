@@ -48,6 +48,7 @@ Each event we will analyze a different dataset. We might use different tools to 
 - [Coding Dojos](https://codingdojo.org/WhatIsCodingDojo/): The idea of using the "dojo style" to train your (programming) skills.
 - [ML Katas](https://www.bpesquet.fr/mlkatas): Interactive notebooks to train Machine Learning skills on small specific problems.
 - [HackyHour](https://hackyhour.github.io/Wuerzburg): A social get-together to solve compuntational problems and explore computers in a fun and interactive manner.
+- [Data Crunch Magic](https://ddojo.github.io/dcm): A virtual series where data analytics experts do some live data crunching using their favorit tools.
 
 # ESF-ZDEX
 
