@@ -7,35 +7,37 @@ logo: "/img/dcm_logo.png"
 <div style="float:right"><b><a href="/de_dcm">DE</a> | EN</b></div>
 
 ## What?
-Eine virtuelle Veranstaltungsreihe bei der Datenanalyse Expert\*innen live einen Datensatz analysieren. Dabei demonstrieren sie jeweils wie man ein bestimmtes Tool oder eine Programmiersprache optimal einsetzt. Alle Teilnehmer\*innen sind herzlich eingeladen mit den Vortragenden zu interagieren, mitzumachen und anschließend zu diskutieren.
+A virtual event series where data analytics experts show their skills by live-crunching some data.
+The demonstrate how their favorite tool or programming language is best utilized.
+Everyone is invited to interact with the expert, ask questions and join the discussion.
 
-Es gilt wie immer unser [Code of Conduct](./de_CodeOfConduct).
+We strive to be an open and inclusive community, everyone is welcome! We have a [code of conduct](./CodeOfConduct) that we adhere to.
 
 ## Who?
-Teilnehmen kann jede\*r, egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Dank der Unterstützung durch das ESF-ZDEX Projekt können auch Mitarbeiter\*innen von Unternehmen kostenfrei an den Veranstaltungen teilnehmen, bitte die [Details unten unter ESF-ZDEX](#esf-zdex) beachten.
+Everyone is welcome to join, whether you are a student, researcher or practitioner from industry. Also all experience levels, backgrounds and tool preferences are welcome!
+As this event is supported by the ESF-ZDEX project, it is free of charge also if you are not a member of the University. See details [below in the ESF-ZDEX section](#esf-zdex).
 
-Wenn Sie Interesse haben selbst zu präsentieren, melden Sie sich einfach bei [Markus Ankenbrand](mailto:markus.ankenbrand@uni-wuerzburg.de).
-
-<small>Um die Lesbarkeit dieser Website zu verbessern, wird im Folgenden das generische Femininum verwendet. Wir weisen aber noch mal ausdrücklich darauf hin, dass alle Menschen unabhängig von Ihrer Geschlechtsidentität bei Data Crunch Magic gleichermaßen willkommen sind.</small>
+Are you interested in presenting, yourself? Awesome! Just send a mail to [Markus Ankenbrand](mailto:markus.ankenbrand@uni-wuerzburg.de).
 
 ## When and where?
 
-Voraussichtlich Donnerstag um 18:00 Uhr in Zoom (online).
-Die Termine werden individuell mit den Vortragenden vereinbart und hier bekannt gegeben.
-Details und der Zoom Link zu jeder Veranstaltung werden ebenfalls jeweils hier veröffentlicht.
+Thursdays at 6pm in Zoom (online).
+The exact dates depend on the availability of expert presenters and will be announced here.
+All details, including the zoom link will also be posted here.
+The regular duration of a Data Crunch Magic Event is 90 minutes.
 
 {% include_relative dcm_dates.md %}
 
 ## Are the Data Crunch Magic Events in German or English?
 
-Das entscheidet die jeweilige Expertin. Das kann sich also immer ändern, wird aber im Voraus angekündigt.
+This is decided by the respective expert. So it might change from time to time but it will always be anounced beforehand.
 
 ## Topics
 
-Es gibt viele Werkzeuge und Sprachen um Daten zu analysieren. Jede hat besondere Stärken und Schwächen. Wir lassen uns jeweils von Expertinnen zeigen, wie sie ihr Werkzeug optimal verwenden. Dabei wird immer ein echter Datensatz von Grund auf live analysiert.
-Außerdem gibt es die Möglichkeit mit den Expertinnen und anderen Teilnehmerinnen zu interagieren, zu diskutieren und Fragen zu stellen.
+There are many tools and languages for data analysis out there. Each has unique strengths and limitations. We let experts demonstrate how to best use their favorite tools. They do it by analyzing a real dataset live.
+It is also possible to interact with the experts and other participants, to ask questions, and to discuss.
 
-Zu den Tools zu denen bereits Events geplant sind gehören:
+We are currently planning events with at least these tools:
 - R
 - julia
 - python
@@ -46,9 +48,9 @@ Zu den Tools zu denen bereits Events geplant sind gehören:
 
 ## Related Events
 
-- [Data Dojo](https://ddojo.github.io/de): Zusammen mit anderen die Datenanalyse Fähigkeiten trainieren.
-- [HackyHour](https://hackyhour.github.io/Wuerzburg): Ein soziales Treffen um gemeinsam Probleme mit Computermethoden zu lösen oder einfach Spaß damit zu haben.
-- [TidyTuesday](https://github.com/rfordatascience/tidytuesday): Jede Woche gibt es einen neuen öffentlichen Datensatz.
+- [Data Dojo](https://ddojo.github.io/): Training data analytics skills together.
+- [HackyHour](https://hackyhour.github.io/Wuerzburg): A social get-together to solve compuntational problems and explore computers in a fun and interactive manner.
+- [TidyTuesday](https://github.com/rfordatascience/tidytuesday): A weekly social data project in R.
 
 ## ESF-ZDEX
 

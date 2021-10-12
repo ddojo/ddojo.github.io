@@ -23,6 +23,7 @@ Wenn Sie Interesse haben selbst zu präsentieren, melden Sie sich einfach bei [M
 Voraussichtlich Donnerstag um 18:00 Uhr in Zoom (online).
 Die Termine werden individuell mit den Vortragenden vereinbart und hier bekannt gegeben.
 Details und der Zoom Link zu jeder Veranstaltung werden ebenfalls jeweils hier veröffentlicht.
+Geplant ist eine Dauer von etwa 90 Minuten.
 
 {% include_relative dcm_dates.md %}
 

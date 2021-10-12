@@ -6,6 +6,7 @@ Monthly meeting to do **collaborative**, **hands-on** data analytics **training*
 We strive to be an open and inclusive community, everyone is welcome! We have a [code of conduct](./CodeOfConduct) that we adhere to.
 
 Everyone is welcome to join, whether you are a student, researcher or practitioner from industry. Also all experience levels, backgrounds and tool preferences are welcome!
+As this event is supported by the ESF-ZDEX project, it is free of charge also if you are not a member of the University. See details [below in the ESF-ZDEX section](#esf-zdex).
 
 # When and Where
 On the second Thursday of each month at 6:00 pm online
