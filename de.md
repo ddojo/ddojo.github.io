@@ -9,6 +9,8 @@ Jede und jeder der sich für Datenanlyse interessiert ist bei uns willkommen! Wi
 # Wer?
 Egal ob Student\*in, Wissenschaftler\*in oder Anwender\*in in einem Unternehmen, alle sind herzlich eingeladen. Das gilt auch für jedes Erfahrungslevel, jede fachliche Ausrichtung und Präferenzen bei den Tools!
 
+Dank der Unterstützung durch das ESF-ZDEX Projekt können auch Mitarbeiter\*innen von Unternehmen kostenfrei an den Veranstaltungen teilnehmen, bitte die [Details unten unter ESF-ZDEX](#esf-zdex) beachten.
+
 <small>Um die Lesbarkeit dieser Website zu verbessern, wird im Folgenden das generische Femininum verwendet. Wir weisen aber noch mal ausdrücklich darauf hin, dass alle Menschen unabhängig von Ihrer Geschlechtsidentität beim Data Dojo gleichermaßen willkommen sind.</small>
 
 # Wann und wo?
@@ -58,6 +60,11 @@ Bei jedem Treffen wird ein neuer Datensatz analysiert. Dabei kommen verschiedene
 # ESF-ZDEX
 
 Data Dojo Würzburg wird vom <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/">ESF ZDEX Projekt</a> unterstützt.
+Das heißt, falls Ihr Unternehmen bereits Partner im ESF-ZDEX Projekt ist, brauchen Sie nichts weiter zu tun, als am Anfang der Veranstaltung Markus Ankenbrand Bescheid zu geben.
+Er kümmert sich dann um den Aktionsnachweis und ggf. den einmaligen Teilnehmendenfragebogen.
+Sollten Ihr Unternehmen noch kein Partner im ESF-ZDEX Projekt sein können Sie sich [hier](https://www.uni-wuerzburg.de/sft/esf-zdex/) informieren und anmelden. 
+Das Angebot ist für KMU in Nordbayern kostenlos und erfordert lediglich das einmalige Ausfüllen einer Kooperationsvereinbarung.
+Bei allen Fragen steht ihnen [Markus Ankenbrand](mailto:markus.ankenbrand@uni-wuerzburg.de) sehr gerne zur Verfügung.
 <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/"><img alt="ESF ZDEX Logo" src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png" style="width: 100%; max-width: 500px"/></a>
 
 # Logo
