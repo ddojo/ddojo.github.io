@@ -52,12 +52,12 @@ Zu den Tools zu denen bereits Events geplant sind gehören:
 
 ## ESF-ZDEX
 
-Data Crunch Magic wird vom <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/">ESF ZDEX Projekt</a> unterstützt.
-Das heißt, falls Ihr Unternehmen bereits Partner im ESF-ZDEX Projekt ist, brauchen Sie nichts weiter zu tun, als am Anfang der Veranstaltung Markus Ankenbrand Bescheid zu geben.
-Er kümmert sich dann um den Aktionsnachweis und ggf. den einmaligen Teilnehmendenfragebogen.
-Sollten Ihr Unternehmen noch kein Partner im ESF-ZDEX Projekt sein können Sie sich [hier](https://www.uni-wuerzburg.de/sft/esf-zdex/) informieren und anmelden. 
-Das Angebot ist für KMU in Nordbayern kostenlos und erfordert lediglich das einmalige Ausfüllen einer Kooperationsvereinbarung.
-Bei allen Fragen steht ihnen [Markus Ankenbrand](mailto:markus.ankenbrand@uni-wuerzburg.de) sehr gerne zur Verfügung.
+Data Crunch Magic is supported by the <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/">ESF ZDEX project</a>.
+If your employer is already a partner in the ESF-ZDEX project, the only thing you need to do is: let Markus Ankenbrand know at the beginning of the event.
+He will take care of the administrative obligations (confirmation of attendance, questionaire for first time participants (only if it is your very first ESF ZDEX event)).
+If your company is not yet partner in the ESF-ZDEX project you can find more information and instructions for joining the network [here](https://www.uni-wuerzburg.de/sft/esf-zdex/).
+This offer is available, free of charge for small and medium sized companies in northern Bavaria. The only requirement is signing a cooperation agreement once.
+[Markus Ankenbrand](mailto:markus.ankenbrand@uni-wuerzburg.de) is happy to answer any questions you might have.
 
 <a href="https://www.uni-wuerzburg.de/sft/esf-zdex/"><img alt="ESF ZDEX Logo" src="https://www.uni-wuerzburg.de/fileadmin/_processed_/4/b/csm_ESF-ZDEX_Logo_neu_transparent_ec9b426f56.png" style="width: 100%; max-width: 500px"/></a>
 
