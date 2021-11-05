@@ -1,8 +1,6 @@
 ### Zoom Details
 
-- [Link](https://uni-wuerzburg.zoom.us/j/93527201367?pwd=SU05NG5WQStsbSt5cVJKQVBxNGRsUT09)
-- Meeting ID: 935 2720 1367
-- Password: 759127
+- *will be posted here*
 
 |    i | Date       | Tool       | Expert     | Title | Dataset  | DE/EN   | Result |
 | ---: | ---------- | ---------- | ---------- | ----- | -------- | ------- | ------ |
