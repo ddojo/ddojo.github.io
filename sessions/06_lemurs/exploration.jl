@@ -18,7 +18,7 @@ using Pipe: @pipe
 md"""
 # Data Dojo 6 - Lemurs
 
-We are analyzing the data set presented by [Dr. Ludmilla Figueiredo](ludmillafigueiredo.github.io/) in this month's [Data Crunch Magic](https://ddojo.github.io/dcm): [Lemurs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-08-24/readme.md) from the Duke Lemur Center.
+We are analyzing the data set presented by [Dr. Ludmilla Figueiredo](https://ludmillafigueiredo.github.io/) in this month's [Data Crunch Magic](https://ddojo.github.io/dcm): [Lemurs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-08-24/readme.md) from the Duke Lemur Center.
 
 For inspiration and interesting lessons on learning R, look at [her presentation](https://github.com/ludmillafigueiredo/data_crunch_magic_wue).
 
@@ -65,7 +65,7 @@ to_number(x) = parse.(Int, x)
 
 # ╔═╡ 32334e5f-4b1b-457b-bb05-3074ef5dfcfd
 md"
-&rArr; The female lemur with most offsprings is named 'Thurber' and the male lemur with most offspring is named 'Dias'. Both have 36 children 😱.
+👉️ The female lemur with most offsprings is named 'Thurber' and the male lemur with most offspring is named 'Dias'. Both have 36 children 😱.
 
 🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒
 "
