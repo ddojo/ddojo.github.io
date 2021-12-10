@@ -1,8 +1,7 @@
-### Attention! The Data Dojo on December 9 starts at 4pm.
-
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|    7 | 2021-12-09 | [Christmas Songs](https://www.kaggle.com/sharkbait1223/billboard-top-100-christmas-carol-dataset)  | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|    8 | 2022-01-13 | TBD  | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|    7 | 2021-12-09 | [Christmas Songs](https://www.kaggle.com/sharkbait1223/billboard-top-100-christmas-carol-dataset)  | [pad](https://hackmd.io/x7zyXNyaSpOCRz8TGadleg)     | [result](sessions/07_christmas/christmas_billboard.html) |
 |    6 | 2021-11-09 | [Lemurs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-08-24/readme.md) | [pad](https://go.uniwue.de/ddojo-padhttps://hackmd.io/cEQTuiwfSk6gSuT3uS4QkA) | [result](sessions/06_lemurs/exploration.html)      |
 |    5 | 2021-10-14 | [Hourly Temperature in Würzburg](https://cdc.dwd.de/portal/)                                                                  | [pad](https://hackmd.io/mHP-kaILTUCdLyooCOus6Q) | [result](https://ddojo.github.io/sessions/05_weather/exploration)        |
 |    4 | 2021-09-09 | [Hourly Temperature in Würzburg](https://cdc.dwd.de/portal/)                                                                  | [pad](https://hackmd.io/5iIuyuHnRZOWOH88cFFeCA) | [result](https://ddojo.github.io/sessions/04_weather/exploration)        |
