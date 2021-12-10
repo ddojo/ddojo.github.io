@@ -1,0 +1,401 @@
+<html>
+<head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.64.0/codemirror.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.1/katex.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.17.2/antd.compact.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div style="margin:30px 30px 0 0"><div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><h1 id="christmas-carols"><span>Christmas Carols</span></h1><p><span>Source: </span><a href="https://www.kaggle.com/sharkbait1223/billboard-top-100-christmas-carol-dataset" target="_blank" rel="noopener"><span>https://www.kaggle.com/sharkbait1223/billboard-top-100-christmas-carol-dataset</span></a><span></span></p></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><h2 id="question-pool"><span>Question Pool</span></h2><ul class="cocalc-slate-tight-list"><li><p><span>How many christmas songs have been in the top 100 (top 10) each year (plot)</span></p></li><li><p><span>Which song has been in the top 100 most often</span></p></li><li><p><span>Which song reached the highest rank each year</span></p></li><li><p><span>Have there been christmas songs in the top 100 in June (far away from christmas)?</span></p></li><li><p><span>How long was the longest a christmas song stayed in the top 100 (consecutively)?</span></p></li></ul></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><h2 id="data-loading"><span>Data Loading</span></h2></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->1<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-keyword">using</span><span> </span><span class="cm-variable">CSV</span><span>,</span><span> </span><span class="cm-variable">DataFrames</span><span>
+</span></div></pre></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->2<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-comment"># increase width of output</span><span>
+</span><span class="cm-variable">ENV</span><span>[</span><span class="cm-string">&quot;COLUMNS</span><span class="cm-string">&quot;</span><span>]</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-number">1000</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->2<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>1000</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->3<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">data</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-variable">CSV</span><span class="cm-operator">.</span><span class="cm-variable">read</span><span>(</span><span class="cm-string">&quot;christmas_billboard_data.csv</span><span class="cm-string">&quot;</span><span>,</span><span> </span><span class="cm-variable">DataFrame</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->3<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div>\begin{tabular}{r|ccccccccccccc}
+	&amp; url &amp; weekid &amp; week\_position &amp; song &amp; performer &amp; songid &amp; instance &amp; previous\_week\_position &amp; peak\_position &amp; weeks\_on\_chart &amp; year &amp; month &amp; day\\
+	\hline
+	&amp; String &amp; String &amp; Int64 &amp; String &amp; String &amp; String &amp; Int64 &amp; Int64? &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64\\
+	\hline
+	1 &amp; http://www.billboard.com/charts/hot-100/1958-12-13 &amp; 12/13/1958 &amp; 83 &amp; RUN RUDOLPH RUN &amp; Chuck Berry &amp; Run Rudolph RunChuck Berry &amp; 1 &amp; \emph{missing} &amp; 69 &amp; 3 &amp; 1958 &amp; 12 &amp; 13 \\
+	2 &amp; http://www.billboard.com/charts/hot-100/1958-12-20 &amp; 12/20/1958 &amp; 57 &amp; JINGLE BELL ROCK &amp; Bobby Helms &amp; Jingle Bell RockBobby Helms &amp; 1 &amp; \emph{missing} &amp; 29 &amp; 19 &amp; 1958 &amp; 12 &amp; 20 \\
+	3 &amp; http://www.billboard.com/charts/hot-100/1958-12-20 &amp; 12/20/1958 &amp; 73 &amp; RUN RUDOLPH RUN &amp; Chuck Berry &amp; Run Rudolph RunChuck Berry &amp; 1 &amp; 83 &amp; 69 &amp; 3 &amp; 1958 &amp; 12 &amp; 20 \\
+	4 &amp; http://www.billboard.com/charts/hot-100/1958-12-20 &amp; 12/20/1958 &amp; 86 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 1 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1958 &amp; 12 &amp; 20 \\
+	5 &amp; http://www.billboard.com/charts/hot-100/1958-12-27 &amp; 12/27/1958 &amp; 44 &amp; GREEN CHRI\$TMA\$ &amp; Stan Freberg &amp; Green Chri\$tma\$Stan Freberg &amp; 1 &amp; \emph{missing} &amp; 44 &amp; 2 &amp; 1958 &amp; 12 &amp; 27 \\
+	6 &amp; http://www.billboard.com/charts/hot-100/1958-12-27 &amp; 12/27/1958 &amp; 66 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 1 &amp; 86 &amp; 12 &amp; 13 &amp; 1958 &amp; 12 &amp; 27 \\
+	7 &amp; http://www.billboard.com/charts/hot-100/1958-12-27 &amp; 12/27/1958 &amp; 69 &amp; RUN RUDOLPH RUN &amp; Chuck Berry &amp; Run Rudolph RunChuck Berry &amp; 1 &amp; 73 &amp; 69 &amp; 3 &amp; 1958 &amp; 12 &amp; 27 \\
+	8 &amp; http://www.billboard.com/charts/hot-100/1958-12-27 &amp; 12/27/1958 &amp; 35 &amp; JINGLE BELL ROCK &amp; Bobby Helms &amp; Jingle Bell RockBobby Helms &amp; 1 &amp; 57 &amp; 29 &amp; 19 &amp; 1958 &amp; 12 &amp; 27 \\
+	9 &amp; http://www.billboard.com/charts/hot-100/1959-01-03 &amp; 1/3/1959 &amp; 45 &amp; JINGLE BELL ROCK &amp; Bobby Helms &amp; Jingle Bell RockBobby Helms &amp; 1 &amp; 35 &amp; 29 &amp; 19 &amp; 1959 &amp; 1 &amp; 3 \\
+	10 &amp; http://www.billboard.com/charts/hot-100/1959-01-03 &amp; 1/3/1959 &amp; 53 &amp; GREEN CHRI\$TMA\$ &amp; Stan Freberg &amp; Green Chri\$tma\$Stan Freberg &amp; 1 &amp; 44 &amp; 44 &amp; 2 &amp; 1959 &amp; 1 &amp; 3 \\
+	11 &amp; http://www.billboard.com/charts/hot-100/1959-01-10 &amp; 1/10/1959 &amp; 70 &amp; JINGLE BELL ROCK &amp; Bobby Helms &amp; Jingle Bell RockBobby Helms &amp; 1 &amp; 45 &amp; 29 &amp; 19 &amp; 1959 &amp; 1 &amp; 10 \\
+	12 &amp; http://www.billboard.com/charts/hot-100/1959-12-05 &amp; 12/5/1959 &amp; 83 &amp; THE HAPPY REINDEER &amp; Dancer, Prancer And Nervous &amp; The Happy ReindeerDancer, Prancer And Nervous &amp; 1 &amp; \emph{missing} &amp; 34 &amp; 6 &amp; 1959 &amp; 12 &amp; 5 \\
+	13 &amp; http://www.billboard.com/charts/hot-100/1959-12-12 &amp; 12/12/1959 &amp; 89 &amp; THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE) &amp; David Seville And The Chipmunks &amp; The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks &amp; 1 &amp; \emph{missing} &amp; 39 &amp; 15 &amp; 1959 &amp; 12 &amp; 12 \\
+	14 &amp; http://www.billboard.com/charts/hot-100/1959-12-12 &amp; 12/12/1959 &amp; 80 &amp; THE HAPPY REINDEER &amp; Dancer, Prancer And Nervous &amp; The Happy ReindeerDancer, Prancer And Nervous &amp; 1 &amp; 83 &amp; 34 &amp; 6 &amp; 1959 &amp; 12 &amp; 12 \\
+	15 &amp; http://www.billboard.com/charts/hot-100/1959-12-19 &amp; 12/19/1959 &amp; 76 &amp; THE HAPPY REINDEER &amp; Dancer, Prancer And Nervous &amp; The Happy ReindeerDancer, Prancer And Nervous &amp; 1 &amp; 80 &amp; 34 &amp; 6 &amp; 1959 &amp; 12 &amp; 19 \\
+	16 &amp; http://www.billboard.com/charts/hot-100/1959-12-19 &amp; 12/19/1959 &amp; 96 &amp; THIS TIME OF THE YEAR &amp; Brook Benton &amp; This Time Of The YearBrook Benton &amp; 1 &amp; \emph{missing} &amp; 66 &amp; 5 &amp; 1959 &amp; 12 &amp; 19 \\
+	17 &amp; http://www.billboard.com/charts/hot-100/1959-12-19 &amp; 12/19/1959 &amp; 68 &amp; THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE) &amp; David Seville And The Chipmunks &amp; The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks &amp; 1 &amp; 89 &amp; 39 &amp; 15 &amp; 1959 &amp; 12 &amp; 19 \\
+	18 &amp; http://www.billboard.com/charts/hot-100/1959-12-26 &amp; 12/26/1959 &amp; 59 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 2 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1959 &amp; 12 &amp; 26 \\
+	19 &amp; http://www.billboard.com/charts/hot-100/1959-12-26 &amp; 12/26/1959 &amp; 77 &amp; THIS TIME OF THE YEAR &amp; Brook Benton &amp; This Time Of The YearBrook Benton &amp; 1 &amp; 96 &amp; 66 &amp; 5 &amp; 1959 &amp; 12 &amp; 26 \\
+	20 &amp; http://www.billboard.com/charts/hot-100/1959-12-26 &amp; 12/26/1959 &amp; 34 &amp; THE HAPPY REINDEER &amp; Dancer, Prancer And Nervous &amp; The Happy ReindeerDancer, Prancer And Nervous &amp; 1 &amp; 76 &amp; 34 &amp; 6 &amp; 1959 &amp; 12 &amp; 26 \\
+	21 &amp; http://www.billboard.com/charts/hot-100/1959-12-26 &amp; 12/26/1959 &amp; 41 &amp; THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE) &amp; David Seville And The Chipmunks &amp; The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks &amp; 1 &amp; 68 &amp; 39 &amp; 15 &amp; 1959 &amp; 12 &amp; 26 \\
+	22 &amp; http://www.billboard.com/charts/hot-100/1960-01-02 &amp; 1/2/1960 &amp; 45 &amp; THE HAPPY REINDEER &amp; Dancer, Prancer And Nervous &amp; The Happy ReindeerDancer, Prancer And Nervous &amp; 1 &amp; 34 &amp; 34 &amp; 6 &amp; 1960 &amp; 1 &amp; 2 \\
+	23 &amp; http://www.billboard.com/charts/hot-100/1960-01-02 &amp; 1/2/1960 &amp; 61 &amp; THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE) &amp; David Seville And The Chipmunks &amp; The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks &amp; 1 &amp; 41 &amp; 39 &amp; 15 &amp; 1960 &amp; 1 &amp; 2 \\
+	24 &amp; http://www.billboard.com/charts/hot-100/1960-01-02 &amp; 1/2/1960 &amp; 75 &amp; THIS TIME OF THE YEAR &amp; Brook Benton &amp; This Time Of The YearBrook Benton &amp; 1 &amp; 77 &amp; 66 &amp; 5 &amp; 1960 &amp; 1 &amp; 2 \\
+	25 &amp; http://www.billboard.com/charts/hot-100/1960-01-09 &amp; 1/9/1960 &amp; 70 &amp; THIS TIME OF THE YEAR &amp; Brook Benton &amp; This Time Of The YearBrook Benton &amp; 1 &amp; 75 &amp; 66 &amp; 5 &amp; 1960 &amp; 1 &amp; 9 \\
+	26 &amp; http://www.billboard.com/charts/hot-100/1960-01-09 &amp; 1/9/1960 &amp; 62 &amp; THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE) &amp; David Seville And The Chipmunks &amp; The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks &amp; 1 &amp; 61 &amp; 39 &amp; 15 &amp; 1960 &amp; 1 &amp; 9 \\
+	27 &amp; http://www.billboard.com/charts/hot-100/1960-01-09 &amp; 1/9/1960 &amp; 93 &amp; THE HAPPY REINDEER &amp; Dancer, Prancer And Nervous &amp; The Happy ReindeerDancer, Prancer And Nervous &amp; 1 &amp; 45 &amp; 34 &amp; 6 &amp; 1960 &amp; 1 &amp; 9 \\
+	28 &amp; http://www.billboard.com/charts/hot-100/1960-01-16 &amp; 1/16/1960 &amp; 66 &amp; THIS TIME OF THE YEAR &amp; Brook Benton &amp; This Time Of The YearBrook Benton &amp; 1 &amp; 70 &amp; 66 &amp; 5 &amp; 1960 &amp; 1 &amp; 16 \\
+	29 &amp; http://www.billboard.com/charts/hot-100/1960-12-10 &amp; 12/10/1960 &amp; 66 &amp; THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE) &amp; David Seville And The Chipmunks &amp; The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks &amp; 2 &amp; \emph{missing} &amp; 39 &amp; 15 &amp; 1960 &amp; 12 &amp; 10 \\
+	30 &amp; http://www.billboard.com/charts/hot-100/1960-12-10 &amp; 12/10/1960 &amp; 100 &amp; THE CHRISTMAS SONG (MERRY CHRISTMAS TO YOU) &amp; Nat King Cole &amp; The Christmas Song (Merry Christmas To You)Nat King Cole &amp; 1 &amp; \emph{missing} &amp; 38 &amp; 8 &amp; 1960 &amp; 12 &amp; 10 \\
+	$\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ &amp; $\dots$ \\
+\end{tabular}
+</div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->4<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">describe</span><span>(</span><span class="cm-variable">data</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->4<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div>\begin{tabular}{r|cccccccc}
+	&amp; variable &amp; mean &amp; min &amp; median &amp; max &amp; nunique &amp; nmissing &amp; eltype\\
+	\hline
+	&amp; Symbol &amp; Union… &amp; Any &amp; Union… &amp; Any &amp; Union… &amp; Union… &amp; Type\\
+	\hline
+	1 &amp; url &amp;  &amp; http://www.billboard.com/charts/hot-100/1958-12-13 &amp;  &amp; http://www.billboard.com/charts/hot-100/2017-01-14 &amp; 206 &amp;  &amp; String \\
+	2 &amp; weekid &amp;  &amp; 1/1/1994 &amp;  &amp; 12/9/2006 &amp; 206 &amp;  &amp; String \\
+	3 &amp; week\_position &amp; 57.2041 &amp; 7 &amp; 58.0 &amp; 100 &amp;  &amp;  &amp; Int64 \\
+	4 &amp; song &amp;  &amp; A GREAT BIG SLED &amp;  &amp; WINTER WORLD OF LOVE &amp; 70 &amp;  &amp; String \\
+	5 &amp; performer &amp;  &amp; 98 Degrees &amp;  &amp; Willis &quot;The Guard&quot; \&amp; Vigorish &amp; 69 &amp;  &amp; String \\
+	6 &amp; songid &amp;  &amp; A Great Big SledThe Killers Featuring Toni Halliday &amp;  &amp; Winter World Of LoveEngelbert Humperdinck &amp; 78 &amp;  &amp; String \\
+	7 &amp; instance &amp; 1.58656 &amp; 1 &amp; 1.0 &amp; 6 &amp;  &amp;  &amp; Int64 \\
+	8 &amp; previous\_week\_position &amp; 55.5197 &amp; 7 &amp; 57.0 &amp; 100 &amp;  &amp; 108 &amp; Union\{Missing, Int64\} \\
+	9 &amp; peak\_position &amp; 37.5349 &amp; 7 &amp; 34.0 &amp; 100 &amp;  &amp;  &amp; Int64 \\
+	10 &amp; weeks\_on\_chart &amp; 9.64599 &amp; 1 &amp; 8.0 &amp; 20 &amp;  &amp;  &amp; Int64 \\
+	11 &amp; year &amp; 1982.06 &amp; 1958 &amp; 1975.0 &amp; 2017 &amp;  &amp;  &amp; Int64 \\
+	12 &amp; month &amp; 7.75452 &amp; 1 &amp; 12.0 &amp; 12 &amp;  &amp;  &amp; Int64 \\
+	13 &amp; day &amp; 16.6718 &amp; 1 &amp; 17.0 &amp; 31 &amp;  &amp;  &amp; Int64 \\
+\end{tabular}
+</div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->5<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">song</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->5<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>387-element Vector{String}:
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;WHITE CHRISTMAS&quot;
+ &quot;GREEN CHRI\$TMA\$&quot;
+ &quot;WHITE CHRISTMAS&quot;
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;GREEN CHRI\$TMA\$&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;THE HAPPY REINDEER&quot;
+ &quot;THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE)&quot;
+ ⋮
+ &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;
+ &quot;ROCKIN&#x27; AROUND THE CHRISTMAS TREE&quot;
+ &quot;THE CHRISTMAS SONG (MERRY CHRISTMAS TO YOU)&quot;
+ &quot;LAST CHRISTMAS&quot;
+ &quot;A HOLLY JOLLY CHRISTMAS&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;FELIZ NAVIDAD&quot;
+ &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;
+ &quot;ROCKIN&#x27; AROUND THE CHRISTMAS TREE&quot;
+ &quot;IT&#x27;S THE MOST WONDERFUL TIME OF THE YEAR&quot;
+ &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;
+ &quot;LAST CHRISTMAS&quot;</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->6<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-string">&quot;WHITE CHRISTMAS</span><span class="cm-string">&quot;</span><span> </span><span class="cm-operator">in</span><span> </span><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">song</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->6<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>true</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->7<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">hans</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-variable">data</span><span>[</span><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">song</span><span> </span><span class="cm-operator">.</span><span class="cm-operator">==</span><span> </span><span class="cm-string">&quot;WHITE CHRISTMAS</span><span class="cm-string">&quot;</span><span>,</span><span> </span><span class="cm-number">2</span><span class="cm-operator">:</span><span class="cm-number">end</span><span> </span><span>]</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->7<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div>\begin{tabular}{r|cccccccccccc}
+	&amp; weekid &amp; week\_position &amp; song &amp; performer &amp; songid &amp; instance &amp; previous\_week\_position &amp; peak\_position &amp; weeks\_on\_chart &amp; year &amp; month &amp; day\\
+	\hline
+	&amp; String &amp; Int64 &amp; String &amp; String &amp; String &amp; Int64 &amp; Int64? &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64\\
+	\hline
+	1 &amp; 12/20/1958 &amp; 86 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 1 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1958 &amp; 12 &amp; 20 \\
+	2 &amp; 12/27/1958 &amp; 66 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 1 &amp; 86 &amp; 12 &amp; 13 &amp; 1958 &amp; 12 &amp; 27 \\
+	3 &amp; 12/26/1959 &amp; 59 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 2 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1959 &amp; 12 &amp; 26 \\
+	4 &amp; 12/10/1960 &amp; 55 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 3 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1960 &amp; 12 &amp; 10 \\
+	5 &amp; 12/17/1960 &amp; 32 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 3 &amp; 55 &amp; 12 &amp; 13 &amp; 1960 &amp; 12 &amp; 17 \\
+	6 &amp; 12/17/1960 &amp; 96 &amp; WHITE CHRISTMAS &amp; The Drifters Featuring Clyde McPhatter And Bill Pinkney &amp; White ChristmasThe Drifters Featuring Clyde McPhatter And Bill Pinkney &amp; 1 &amp; \emph{missing} &amp; 88 &amp; 2 &amp; 1960 &amp; 12 &amp; 17 \\
+	7 &amp; 12/24/1960 &amp; 26 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 3 &amp; 32 &amp; 12 &amp; 13 &amp; 1960 &amp; 12 &amp; 24 \\
+	8 &amp; 12/9/1961 &amp; 66 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 4 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1961 &amp; 12 &amp; 9 \\
+	9 &amp; 12/16/1961 &amp; 33 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 4 &amp; 66 &amp; 12 &amp; 13 &amp; 1961 &amp; 12 &amp; 16 \\
+	10 &amp; 12/23/1961 &amp; 20 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 4 &amp; 33 &amp; 12 &amp; 13 &amp; 1961 &amp; 12 &amp; 23 \\
+	11 &amp; 12/30/1961 &amp; 12 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 4 &amp; 20 &amp; 12 &amp; 13 &amp; 1961 &amp; 12 &amp; 30 \\
+	12 &amp; 1/6/1962 &amp; 12 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 4 &amp; 20 &amp; 12 &amp; 13 &amp; 1962 &amp; 1 &amp; 6 \\
+	13 &amp; 12/15/1962 &amp; 70 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 5 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1962 &amp; 12 &amp; 15 \\
+	14 &amp; 12/22/1962 &amp; 88 &amp; WHITE CHRISTMAS &amp; The Drifters Featuring Clyde McPhatter And Bill Pinkney &amp; White ChristmasThe Drifters Featuring Clyde McPhatter And Bill Pinkney &amp; 2 &amp; \emph{missing} &amp; 88 &amp; 2 &amp; 1962 &amp; 12 &amp; 22 \\
+	15 &amp; 12/22/1962 &amp; 46 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 5 &amp; 70 &amp; 12 &amp; 13 &amp; 1962 &amp; 12 &amp; 22 \\
+	16 &amp; 12/29/1962 &amp; 38 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 5 &amp; 46 &amp; 12 &amp; 13 &amp; 1962 &amp; 12 &amp; 29 \\
+\end{tabular}
+</div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->8<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">hans</span><span>[</span><span class="cm-variable">hans</span><span class="cm-operator">.</span><span class="cm-variable">year</span><span> </span><span class="cm-operator">.</span><span class="cm-operator">==</span><span> </span><span class="cm-number">1962</span><span>,</span><span> </span><span class="cm-operator">:</span><span>]</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->8<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div>\begin{tabular}{r|cccccccccccc}
+	&amp; weekid &amp; week\_position &amp; song &amp; performer &amp; songid &amp; instance &amp; previous\_week\_position &amp; peak\_position &amp; weeks\_on\_chart &amp; year &amp; month &amp; day\\
+	\hline
+	&amp; String &amp; Int64 &amp; String &amp; String &amp; String &amp; Int64 &amp; Int64? &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64\\
+	\hline
+	1 &amp; 1/6/1962 &amp; 12 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 4 &amp; 20 &amp; 12 &amp; 13 &amp; 1962 &amp; 1 &amp; 6 \\
+	2 &amp; 12/15/1962 &amp; 70 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 5 &amp; \emph{missing} &amp; 12 &amp; 13 &amp; 1962 &amp; 12 &amp; 15 \\
+	3 &amp; 12/22/1962 &amp; 88 &amp; WHITE CHRISTMAS &amp; The Drifters Featuring Clyde McPhatter And Bill Pinkney &amp; White ChristmasThe Drifters Featuring Clyde McPhatter And Bill Pinkney &amp; 2 &amp; \emph{missing} &amp; 88 &amp; 2 &amp; 1962 &amp; 12 &amp; 22 \\
+	4 &amp; 12/22/1962 &amp; 46 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 5 &amp; 70 &amp; 12 &amp; 13 &amp; 1962 &amp; 12 &amp; 22 \\
+	5 &amp; 12/29/1962 &amp; 38 &amp; WHITE CHRISTMAS &amp; Bing Crosby &amp; White ChristmasBing Crosby &amp; 5 &amp; 46 &amp; 12 &amp; 13 &amp; 1962 &amp; 12 &amp; 29 \\
+\end{tabular}
+</div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><h3 id="how-many-distinct-songs-are-there?"><span>How many distinct songs are there?</span></h3></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->9<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">songs</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">song</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->9<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>387-element Vector{String}:
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;WHITE CHRISTMAS&quot;
+ &quot;GREEN CHRI\$TMA\$&quot;
+ &quot;WHITE CHRISTMAS&quot;
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;GREEN CHRI\$TMA\$&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;THE HAPPY REINDEER&quot;
+ &quot;THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE)&quot;
+ ⋮
+ &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;
+ &quot;ROCKIN&#x27; AROUND THE CHRISTMAS TREE&quot;
+ &quot;THE CHRISTMAS SONG (MERRY CHRISTMAS TO YOU)&quot;
+ &quot;LAST CHRISTMAS&quot;
+ &quot;A HOLLY JOLLY CHRISTMAS&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;FELIZ NAVIDAD&quot;
+ &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;
+ &quot;ROCKIN&#x27; AROUND THE CHRISTMAS TREE&quot;
+ &quot;IT&#x27;S THE MOST WONDERFUL TIME OF THE YEAR&quot;
+ &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;
+ &quot;LAST CHRISTMAS&quot;</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->10<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">unique</span><span>(</span><span class="cm-variable">songs</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->10<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>70-element Vector{String}:
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;WHITE CHRISTMAS&quot;
+ &quot;GREEN CHRI\$TMA\$&quot;
+ &quot;THE HAPPY REINDEER&quot;
+ &quot;THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE)&quot;
+ &quot;THIS TIME OF THE YEAR&quot;
+ &quot;THE CHRISTMAS SONG (MERRY CHRISTMAS TO YOU)&quot;
+ &quot;ROCKIN&#x27; AROUND THE CHRISTMAS TREE&quot;
+ &quot;SILENT NIGHT&quot;
+ &quot;TWISTIN&#x27; BELLS&quot;
+ &quot;CHRISTMAS AULD LANG SYNE&quot;
+ &quot;BLUE CHRISTMAS&quot;
+ ⋮
+ &quot;WELCOME CHRISTMAS&quot;
+ &quot;BABY, IT&#x27;S COLD OUTSIDE&quot;
+ &quot;OH SANTA!&quot;
+ &quot;SHAKE UP CHRISTMAS&quot;
+ &quot;IT&#x27;S BEGINNING TO LOOK A LOT LIKE CHRISTMAS&quot;
+ &quot;I&#x27;LL BE HOME FOR CHRISTMAS&quot;
+ &quot;UNDERNEATH THE TREE&quot;
+ &quot;SANTA TELL ME&quot;
+ &quot;HAVE YOURSELF A MERRY LITTLE CHRISTMAS&quot;
+ &quot;A HOLLY JOLLY CHRISTMAS&quot;
+ &quot;FELIZ NAVIDAD&quot;
+ &quot;IT&#x27;S THE MOST WONDERFUL TIME OF THE YEAR&quot;</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->11<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">song</span><span> </span><span class="cm-operator">|</span><span class="cm-operator">&gt;</span><span> </span><span class="cm-variable">unique</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->11<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>70-element Vector{String}:
+ &quot;RUN RUDOLPH RUN&quot;
+ &quot;JINGLE BELL ROCK&quot;
+ &quot;WHITE CHRISTMAS&quot;
+ &quot;GREEN CHRI\$TMA\$&quot;
+ &quot;THE HAPPY REINDEER&quot;
+ &quot;THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE)&quot;
+ &quot;THIS TIME OF THE YEAR&quot;
+ &quot;THE CHRISTMAS SONG (MERRY CHRISTMAS TO YOU)&quot;
+ &quot;ROCKIN&#x27; AROUND THE CHRISTMAS TREE&quot;
+ &quot;SILENT NIGHT&quot;
+ &quot;TWISTIN&#x27; BELLS&quot;
+ &quot;CHRISTMAS AULD LANG SYNE&quot;
+ &quot;BLUE CHRISTMAS&quot;
+ ⋮
+ &quot;WELCOME CHRISTMAS&quot;
+ &quot;BABY, IT&#x27;S COLD OUTSIDE&quot;
+ &quot;OH SANTA!&quot;
+ &quot;SHAKE UP CHRISTMAS&quot;
+ &quot;IT&#x27;S BEGINNING TO LOOK A LOT LIKE CHRISTMAS&quot;
+ &quot;I&#x27;LL BE HOME FOR CHRISTMAS&quot;
+ &quot;UNDERNEATH THE TREE&quot;
+ &quot;SANTA TELL ME&quot;
+ &quot;HAVE YOURSELF A MERRY LITTLE CHRISTMAS&quot;
+ &quot;A HOLLY JOLLY CHRISTMAS&quot;
+ &quot;FELIZ NAVIDAD&quot;
+ &quot;IT&#x27;S THE MOST WONDERFUL TIME OF THE YEAR&quot;</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->12<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">filter</span><span>(</span><span class="cm-variable">y</span><span> </span><span class="cm-operator">-&gt;</span><span> </span><span class="cm-variable">y</span><span> </span><span class="cm-operator">&gt;=</span><span> </span><span class="cm-number">2010</span><span>,</span><span class="cm-variable">data</span><span>[</span><span class="cm-operator">:</span><span>,</span><span class="cm-string">&quot;year</span><span class="cm-string">&quot;</span><span>]</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->12<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>69-element Vector{Int64}:
+ 2010
+ 2010
+ 2010
+ 2010
+ 2011
+ 2011
+ 2011
+ 2011
+ 2011
+ 2011
+ 2011
+ 2011
+ 2011
+    ⋮
+ 2016
+ 2016
+ 2017
+ 2017
+ 2017
+ 2017
+ 2017
+ 2017
+ 2017
+ 2017
+ 2017
+ 2017</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->13<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">data</span><span>[</span><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">year</span><span> </span><span class="cm-operator">.</span><span class="cm-operator">==</span><span> </span><span class="cm-number">2010</span><span>,</span><span> </span><span class="cm-number">2</span><span class="cm-operator">:</span><span class="cm-number">end</span><span>]</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->13<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div>\begin{tabular}{r|cccccccccccc}
+	&amp; weekid &amp; week\_position &amp; song &amp; performer &amp; songid &amp; instance &amp; previous\_week\_position &amp; peak\_position &amp; weeks\_on\_chart &amp; year &amp; month &amp; day\\
+	\hline
+	&amp; String &amp; Int64 &amp; String &amp; String &amp; String &amp; Int64 &amp; Int64? &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64\\
+	\hline
+	1 &amp; 12/18/2010 &amp; 25 &amp; CHRISTMAS LIGHTS &amp; Coldplay &amp; Christmas LightsColdplay &amp; 1 &amp; \emph{missing} &amp; 25 &amp; 3 &amp; 2010 &amp; 12 &amp; 18 \\
+	2 &amp; 12/25/2010 &amp; 59 &amp; WELCOME CHRISTMAS &amp; Glee Cast &amp; Welcome ChristmasGlee Cast &amp; 1 &amp; \emph{missing} &amp; 59 &amp; 1 &amp; 2010 &amp; 12 &amp; 25 \\
+	3 &amp; 12/25/2010 &amp; 57 &amp; BABY, IT&#x27;S COLD OUTSIDE &amp; Glee Cast &amp; Baby, It&#x27;s Cold OutsideGlee Cast &amp; 1 &amp; \emph{missing} &amp; 57 &amp; 2 &amp; 2010 &amp; 12 &amp; 25 \\
+	4 &amp; 12/25/2010 &amp; 35 &amp; CHRISTMAS LIGHTS &amp; Coldplay &amp; Christmas LightsColdplay &amp; 1 &amp; 25 &amp; 25 &amp; 3 &amp; 2010 &amp; 12 &amp; 25 \\
+\end{tabular}
+</div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><h3 id="which-song-was-in-the-charts-most-often?"><span>Which song was in the charts most often?</span></h3><p><span>More precisely, for the largest number of weeks.</span></p></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->14<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-keyword">using</span><span> </span><span class="cm-variable">StatsBase</span><span>
+</span></div></pre></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->15<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">songs_occ</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-variable">countmap</span><span>(</span><span class="cm-variable">songs</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->15<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>Dict{String, Int64} with 70 entries:
+  &quot;DECK THE HALLS&quot;                              =&gt; 3
+  &quot;THE MARVELOUS TOY&quot;                           =&gt; 9
+  &quot;RUN RUDOLPH RUN&quot;                             =&gt; 3
+  &quot;I&#x27;LL BE HOME&quot;                                =&gt; 2
+  &quot;THE CHRISTMAS SONG (MERRY CHRISTMAS TO YOU)&quot; =&gt; 8
+  &quot;LITTLE ALTAR BOY&quot;                            =&gt; 9
+  &quot;CHRISTMAS AULD LANG SYNE&quot;                    =&gt; 3
+  &quot;MACARENA CHRISTMAS&quot;                          =&gt; 4
+  &quot;THE SANTA CLAUS BOOGIE&quot;                      =&gt; 1
+  &quot;BETTER DAYS&quot;                                 =&gt; 13
+  &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;             =&gt; 20
+  &quot;SAME OLD LANG SYNE&quot;                          =&gt; 8
+  &quot;BELIEVE&quot;                                     =&gt; 5
+  &quot;JINGLE BELL ROCK&quot;                            =&gt; 28
+  &quot;THE HAPPY REINDEER&quot;                          =&gt; 6
+  &quot;SHAKE UP CHRISTMAS&quot;                          =&gt; 1
+  &quot;SANTA TELL ME&quot;                               =&gt; 5
+  &quot;CHRISTMAS LIGHTS&quot;                            =&gt; 3
+  &quot;HAVE YOURSELF A MERRY LITTLE CHRISTMAS&quot;      =&gt; 1
+  &quot;CHRISTMAS DREAM&quot;                             =&gt; 2
+  &quot;SANTA&#x27;S A FAT BITCH&quot;                         =&gt; 5
+  &quot;PLEASE COME HOME FOR CHRISTMAS&quot;              =&gt; 11
+  &quot;I&#x27;LL BE HOME FOR CHRISTMAS&quot;                  =&gt; 1
+  &quot;OH SANTA!&quot;                                   =&gt; 1
+  &quot;HAPPY XMAS (WAR IS OVER)&quot;                    =&gt; 2
+  ⋮                                             =&gt; ⋮</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->16<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">sort</span><span>(</span><span class="cm-variable">collect</span><span>(</span><span class="cm-variable">songs_occ</span><span>)</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->16<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>70-element Vector{Pair{String, Int64}}:
+                                                        &quot;A GREAT BIG SLED&quot; =&gt; 2
+                                                 &quot;A HOLLY JOLLY CHRISTMAS&quot; =&gt; 1
+                                         &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot; =&gt; 20
+                                                                    &quot;AMEN&quot; =&gt; 11
+                                                          &quot;AULD LANG SYNE&quot; =&gt; 5
+                                                  &quot;BABY&#x27;S FIRST CHRISTMAS&quot; =&gt; 6
+                                                 &quot;BABY, IT&#x27;S COLD OUTSIDE&quot; =&gt; 2
+                                                                 &quot;BELIEVE&quot; =&gt; 5
+                                                             &quot;BETTER DAYS&quot; =&gt; 13
+                                                          &quot;BLUE CHRISTMAS&quot; =&gt; 1
+                                                            &quot;CHILD OF GOD&quot; =&gt; 1
+                                                &quot;CHRISTMAS AULD LANG SYNE&quot; =&gt; 3
+                                                         &quot;CHRISTMAS DREAM&quot; =&gt; 2
+                                                                           ⋮
+                                                          &quot;THIS CHRISTMAS&quot; =&gt; 5
+                                                               &quot;THIS GIFT&quot; =&gt; 3
+                                             &quot;THIS ONE&#x27;S FOR THE CHILDREN&quot; =&gt; 12
+                                                   &quot;THIS TIME OF THE YEAR&quot; =&gt; 5
+                                                          &quot;TWISTIN&#x27; BELLS&quot; =&gt; 3
+                                                     &quot;UNDERNEATH THE TREE&quot; =&gt; 3
+                                                       &quot;WELCOME CHRISTMAS&quot; =&gt; 1
+ &quot;WHAT CAN YOU GET A WOOKIEE FOR CHRISTMAS (WHEN HE ALREADY OWNS A COMB?)&quot; =&gt; 6
+                                                    &quot;WHEN A CHILD IS BORN&quot; =&gt; 7
+                                                &quot;WHERE ARE YOU CHRISTMAS?&quot; =&gt; 1
+                                                         &quot;WHITE CHRISTMAS&quot; =&gt; 16
+                                                    &quot;WINTER WORLD OF LOVE&quot; =&gt; 9</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->17<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">sort</span><span>(</span><span class="cm-variable">songs_occ</span><span>;</span><span> </span><span class="cm-variable">byvalue</span><span class="cm-error">=</span><span class="cm-builtin">true</span><span>,</span><span> </span><span class="cm-variable">rev</span><span class="cm-error">=</span><span class="cm-builtin">true</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->17<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>OrderedCollections.OrderedDict{String, Int64} with 70 entries:
+  &quot;JINGLE BELL ROCK&quot;                                                        =&gt; 28
+  &quot;ALL I WANT FOR CHRISTMAS IS YOU&quot;                                         =&gt; 20
+  &quot;ROCKIN&#x27; AROUND THE CHRISTMAS TREE&quot;                                       =&gt; 19
+  &quot;THE CHIPMUNK SONG (CHRISTMAS DON&#x27;T BE LATE)&quot;                             =&gt; 16
+  &quot;WHITE CHRISTMAS&quot;                                                         =&gt; 16
+  &quot;MISTLETOE&quot;                                                               =&gt; 14
+  &quot;BETTER DAYS&quot;                                                             =&gt; 13
+  &quot;THIS ONE&#x27;S FOR THE CHILDREN&quot;                                             =&gt; 12
+  &quot;PLEASE COME HOME FOR CHRISTMAS&quot;                                          =&gt; 11
+  &quot;AMEN&quot;                                                                    =&gt; 11
+  &quot;IF WE MAKE IT THROUGH DECEMBER&quot;                                          =&gt; 10
+  &quot;THE MARVELOUS TOY&quot;                                                       =&gt; 9
+  &quot;LITTLE ALTAR BOY&quot;                                                        =&gt; 9
+  &quot;WINTER WORLD OF LOVE&quot;                                                    =&gt; 9
+  &quot;THE CHRISTMAS SONG (MERRY CHRISTMAS TO YOU)&quot;                             =&gt; 8
+  &quot;SAME OLD LANG SYNE&quot;                                                      =&gt; 8
+  &quot;DO THEY KNOW IT&#x27;S CHRISTMAS?&quot;                                            =&gt; 7
+  &quot;PRETTY PAPER&quot;                                                            =&gt; 7
+  &quot;LET IT SNOW&quot;                                                             =&gt; 7
+  &quot;WHEN A CHILD IS BORN&quot;                                                    =&gt; 7
+  &quot;THE HAPPY REINDEER&quot;                                                      =&gt; 6
+  &quot;WHAT CAN YOU GET A WOOKIEE FOR CHRISTMAS (WHEN HE ALREADY OWNS A COMB?)&quot; =&gt; 6
+  &quot;MY FAVORITE THINGS&quot;                                                      =&gt; 6
+  &quot;MONSTERS&#x27; HOLIDAY&quot;                                                       =&gt; 6
+  &quot;BABY&#x27;S FIRST CHRISTMAS&quot;                                                  =&gt; 6
+  ⋮                                                                         =&gt; ⋮</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><h3 id="what-about-&quot;last-christmas&quot;?"><span>What about &quot;Last Christmas&quot;?</span></h3></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->18<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">wham</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-variable">data</span><span>[</span><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">song</span><span> </span><span class="cm-operator">.</span><span class="cm-operator">==</span><span> </span><span class="cm-string">&quot;LAST CHRISTMAS</span><span class="cm-string">&quot;</span><span>,</span><span> </span><span class="cm-number">2</span><span class="cm-operator">:</span><span class="cm-number">end</span><span> </span><span>]</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->18<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div>\begin{tabular}{r|cccccccccccc}
+	&amp; weekid &amp; week\_position &amp; song &amp; performer &amp; songid &amp; instance &amp; previous\_week\_position &amp; peak\_position &amp; weeks\_on\_chart &amp; year &amp; month &amp; day\\
+	\hline
+	&amp; String &amp; Int64 &amp; String &amp; String &amp; String &amp; Int64 &amp; Int64? &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64 &amp; Int64\\
+	\hline
+	1 &amp; 12/19/2009 &amp; 63 &amp; LAST CHRISTMAS &amp; Glee Cast &amp; Last ChristmasGlee Cast &amp; 1 &amp; \emph{missing} &amp; 63 &amp; 2 &amp; 2009 &amp; 12 &amp; 19 \\
+	2 &amp; 12/26/2009 &amp; 89 &amp; LAST CHRISTMAS &amp; Glee Cast &amp; Last ChristmasGlee Cast &amp; 1 &amp; 63 &amp; 63 &amp; 2 &amp; 2009 &amp; 12 &amp; 26 \\
+	3 &amp; 12/7/2013 &amp; 96 &amp; LAST CHRISTMAS &amp; Ariana Grande &amp; Last ChristmasAriana Grande &amp; 1 &amp; \emph{missing} &amp; 96 &amp; 1 &amp; 2013 &amp; 12 &amp; 7 \\
+	4 &amp; 1/7/2017 &amp; 50 &amp; LAST CHRISTMAS &amp; Wham! &amp; Last ChristmasWham! &amp; 1 &amp; \emph{missing} &amp; 41 &amp; 2 &amp; 2017 &amp; 1 &amp; 7 \\
+	5 &amp; 1/14/2017 &amp; 41 &amp; LAST CHRISTMAS &amp; Wham! &amp; Last ChristmasWham! &amp; 1 &amp; 50 &amp; 41 &amp; 2 &amp; 2017 &amp; 1 &amp; 14 \\
+\end{tabular}
+</div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><p><span>The </span><span><em>Wham!</em></span><span> version of </span><span><em>Last Christmas</em></span><span> was only in the charts in 2017. That seems suspicious. The reason for that can be found on </span><a href="https://en.wikipedia.org/wiki/Last_Christmas#Other_territories" target="_blank" rel="noopener"><span>Wikipedia</span></a><span>:</span></p><blockquote><p><span>&quot;Last Christmas&quot; was not released commercially as a single in the United States until November 2014, when it was made available on 12&quot; vinyl as a Record Store Day exclusive.[51] Since then, the song has re-entered the Billboard Holiday Songs Chart on a regular basis, peaking at No. 3 on 7 December 2019.[52][53]</span></p></blockquote><blockquote><p><span>As of 25 November 2016, total US sales of the digital track stand at 751,000 downloads according to Nielsen SoundScan, placing it 10th on the list of all-time best-selling Christmas/holiday digital singles in US SoundScan history.[54] The song debuted at number 50 on the Billboard Hot 100 in the chart dated 7 January 2017, after George Michael died.[55] In December 2018, the song re-entered the Hot 100, reaching No. 25 in January 2019,[56] and then a new peak of No. 11 in the first issue of 2020. On the issue dated 2 January 2021, &quot;Last Christmas&quot; reached number nine on the Hot 100, its first foray into the top 10 and returning Wham! to the top 10 after a 35-year break.[57][58] According to the Recording Industry Association of America (RIAA), it was certified double platinum in December 2019 and has sold 2 million digital units.[59]</span></p></blockquote><p><span>In addition: we as Germans might be biased! From </span><a href="https://en.wikipedia.org/wiki/Last_Christmas#Other_territories" target="_blank" rel="noopener"><span>the same source</span></a><span>:</span></p><blockquote><p><span>In Germany, the song is the most successful Christmas single of all time, having spent 147 weeks on the German Singles Chart and attained a peak position of No. 2 on 27 December 2019.[41] It has charted every year since 1997.[42]</span></p></blockquote></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->19<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">songid</span><span> </span><span class="cm-operator">|</span><span class="cm-operator">&gt;</span><span> </span><span class="cm-variable">countmap</span><span> </span><span class="cm-operator">|</span><span class="cm-operator">&gt;</span><span> </span><span class="cm-variable">x</span><span class="cm-operator">-&gt;</span><span> </span><span class="cm-variable">sort</span><span>(</span><span class="cm-variable">x</span><span>,</span><span> </span><span class="cm-variable">rev</span><span> </span><span class="cm-error">=</span><span class="cm-builtin">true</span><span>,</span><span class="cm-variable">byvalue</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-builtin">true</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->19<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>OrderedCollections.OrderedDict{String, Int64} with 78 entries:
+  &quot;Jingle Bell RockBobby Helms&quot;                                                                                              =&gt; 20
+  &quot;Rockin&#x27; Around The Christmas TreeBrenda Lee&quot;                                                                              =&gt; 19
+  &quot;All I Want For Christmas Is YouMariah Carey&quot;                                                                              =&gt; 19
+  &quot;The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks&quot;                                               =&gt; 16
+  &quot;White ChristmasBing Crosby&quot;                                                                                               =&gt; 14
+  &quot;Better DaysGoo Goo Dolls&quot;                                                                                                 =&gt; 13
+  &quot;This One&#x27;s For The ChildrenNew Kids On The Block&quot;                                                                         =&gt; 12
+  &quot;AmenThe Impressions&quot;                                                                                                      =&gt; 11
+  &quot;MistletoeJustin Bieber&quot;                                                                                                   =&gt; 10
+  &quot;If We Make It Through DecemberMerle Haggard&quot;                                                                              =&gt; 10
+  &quot;The Marvelous ToyThe Chad Mitchell Trio&quot;                                                                                  =&gt; 9
+  &quot;Winter World Of LoveEngelbert Humperdinck&quot;                                                                                =&gt; 9
+  &quot;Little Altar BoyVic Dana&quot;                                                                                                 =&gt; 9
+  &quot;Please Come Home For ChristmasEagles&quot;                                                                                     =&gt; 8
+  &quot;Jingle Bell RockBobby Rydell/Chubby Checker&quot;                                                                              =&gt; 8
+  &quot;Same Old Lang SyneDan Fogelberg&quot;                                                                                          =&gt; 8
+  &quot;The Christmas Song (Merry Christmas To You)Nat King Cole&quot;                                                                 =&gt; 8
+  &quot;Let It SnowBoyz II Men&quot;                                                                                                   =&gt; 7
+  &quot;Pretty PaperRoy Orbison&quot;                                                                                                  =&gt; 7
+  &quot;When A Child Is BornMichael Holm&quot;                                                                                         =&gt; 7
+  &quot;My Favorite ThingsHerb Alpert &amp; The Tijuana Brass&quot;                                                                        =&gt; 6
+  &quot;Do They Know It&#x27;s Christmas?Band-Aid&quot;                                                                                     =&gt; 6
+  &quot;What Can You Get A Wookiee For Christmas (When He Already Owns A Comb?)The Star Wars Intergalactic Droid Choir &amp; Chorale&quot; =&gt; 6
+  &quot;Monsters&#x27; HolidayBobby \&quot;Boris\&quot; Pickett And The Crypt-Kickers&quot;                                                           =&gt; 6
+  &quot;Baby&#x27;s First ChristmasConnie Francis&quot;                                                                                     =&gt; 6
+  ⋮                                                                                                                          =&gt; ⋮</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->20<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:hidden;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">sort</span><span>(</span><span class="cm-variable">countmap</span><span>(</span><span class="cm-variable">data</span><span class="cm-operator">.</span><span class="cm-variable">songid</span><span>)</span><span>,</span><span class="cm-variable">rev</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-builtin">true</span><span>,</span><span> </span><span class="cm-variable">byvalue</span><span> </span><span class="cm-error">=</span><span> </span><span class="cm-builtin">true</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->20<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>OrderedCollections.OrderedDict{String, Int64} with 78 entries:
+  &quot;Jingle Bell RockBobby Helms&quot;                                                                                              =&gt; 20
+  &quot;Rockin&#x27; Around The Christmas TreeBrenda Lee&quot;                                                                              =&gt; 19
+  &quot;All I Want For Christmas Is YouMariah Carey&quot;                                                                              =&gt; 19
+  &quot;The Chipmunk Song (Christmas Don&#x27;t Be Late)David Seville And The Chipmunks&quot;                                               =&gt; 16
+  &quot;White ChristmasBing Crosby&quot;                                                                                               =&gt; 14
+  &quot;Better DaysGoo Goo Dolls&quot;                                                                                                 =&gt; 13
+  &quot;This One&#x27;s For The ChildrenNew Kids On The Block&quot;                                                                         =&gt; 12
+  &quot;AmenThe Impressions&quot;                                                                                                      =&gt; 11
+  &quot;MistletoeJustin Bieber&quot;                                                                                                   =&gt; 10
+  &quot;If We Make It Through DecemberMerle Haggard&quot;                                                                              =&gt; 10
+  &quot;The Marvelous ToyThe Chad Mitchell Trio&quot;                                                                                  =&gt; 9
+  &quot;Winter World Of LoveEngelbert Humperdinck&quot;                                                                                =&gt; 9
+  &quot;Little Altar BoyVic Dana&quot;                                                                                                 =&gt; 9
+  &quot;Please Come Home For ChristmasEagles&quot;                                                                                     =&gt; 8
+  &quot;Jingle Bell RockBobby Rydell/Chubby Checker&quot;                                                                              =&gt; 8
+  &quot;Same Old Lang SyneDan Fogelberg&quot;                                                                                          =&gt; 8
+  &quot;The Christmas Song (Merry Christmas To You)Nat King Cole&quot;                                                                 =&gt; 8
+  &quot;Let It SnowBoyz II Men&quot;                                                                                                   =&gt; 7
+  &quot;Pretty PaperRoy Orbison&quot;                                                                                                  =&gt; 7
+  &quot;When A Child Is BornMichael Holm&quot;                                                                                         =&gt; 7
+  &quot;My Favorite ThingsHerb Alpert &amp; The Tijuana Brass&quot;                                                                        =&gt; 6
+  &quot;Do They Know It&#x27;s Christmas?Band-Aid&quot;                                                                                     =&gt; 6
+  &quot;What Can You Get A Wookiee For Christmas (When He Already Owns A Comb?)The Star Wars Intergalactic Droid Choir &amp; Chorale&quot; =&gt; 6
+  &quot;Monsters&#x27; HolidayBobby \&quot;Boris\&quot; Pickett And The Crypt-Kickers&quot;                                                           =&gt; 6
+  &quot;Baby&#x27;s First ChristmasConnie Francis&quot;                                                                                     =&gt; 6
+  ⋮                                                                                                                          =&gt; ⋮</span></div></div></div></div></div></div>
+</body>
