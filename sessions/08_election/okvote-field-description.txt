@@ -1,0 +1,57 @@
+Siehe z.B. https://okvote.osrz-akdb.de/OK.VOTE_UF/BTW21/09679114/praesentation/opendata.html
+
+Wahl zum Deutschen Bundestag
+
+    datum : Datum des Wahltermins
+    wahl : Name der Wahl
+    ags : AGS der Behörde
+    gebiet-nr : Nummer des Wahlgebiets
+    gebiet-name : Name des Wahlgebiets
+    max-schnellmeldungen : Anzahl an insgesamt erwarteten Schnellmeldungen im Wahlgebiet
+    anz-schnellmeldungen : Anzahl an bisher eingegangenen Schnellmeldungen im Wahlgebiet
+    A1 : Wahlberechtigte ohne Sperrvermerk 'W'
+    A2 : Wahlberechtigte mit Sperrvermerk 'W'
+    A3 : Wahlberechtigte nicht im Wählerverzeichnis
+    A : Wahlberechtigte insgesamt
+    B : Wähler
+    B1 : Wähler mit Wahlschein
+    C : Ungültige Erststimmen
+    D : Gültige Erststimmen
+    E : Ungültige Zweitstimmen
+    F : Gültige Zweitstimmen
+    D1 : Erststimmen für Partei 1
+    ... : ...
+    D99 : Erststimmen für Partei 99
+    F1 : Zweitstimmen für Partei 1
+    ... : ...
+    F99 : Zweitstimmen für Partei 99
+
+Bei der aktuellen Wahl zum Deutschen Bundestag treten folgende Parteien an:
+
+    D1 / F1 : Christlich-Soziale Union in Bayern e.V.
+    D2 / F2 : Sozialdemokratische Partei Deutschlands
+    D3 / F3 : Alternative für Deutschland
+    D4 / F4 : Freie Demokratische Partei
+    D5 / F5 : BÜNDNIS 90/DIE GRÜNEN
+    D6 / F6 : DIE LINKE
+    D7 / F7 : FREIE WÄHLER
+    D8 / F8 : Ökologisch-Demokratische Partei
+    D9 / F9 : PARTEI MENSCH UMWELT TIERSCHUTZ
+    D10 / F10 : Bayernpartei
+    D11 / F11 : Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative
+    D12 / F12 : Piratenpartei Deutschland
+    D13 / F13 : Nationaldemokratische Partei Deutschlands
+    D14 / F14 : V-Partei³ - Partei für Veränderung, Vegetarier und Veganer
+    D15 / F15 : Partei für Gesundheitsforschung
+    D16 / F16 : Marxistisch-Leninistische Partei Deutschlands
+    D17 / F17 : Deutsche Kommunistische Partei
+    D18 / F18 : Basisdemokratische Partei Deutschland
+    D19 / F19 : Bündnis C - Christen für Deutschland
+    D20 / F20 : DER DRITTE WEG
+    D21 / F21 : Die Urbane. Eine HipHop Partei
+    D22 / F22 : Liberal-Konservative Reformer
+    D23 / F23 : Partei der Humanisten
+    D24 / F24 : Team Todenhöfer – Die Gerechtigkeitspartei
+    D25 / F25 : UNABHÄNGIGE für bürgernahe Demokratie
+    D26 / F26 : Volt Deutschland
+    D27 : Einzelbewerber Schürer 
