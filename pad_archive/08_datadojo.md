@@ -96,4 +96,4 @@ For Notebooks (R, python, julia, js, ...) with real time collaboration [CoCalc](
 
 ## Cross Links
  - [previous pad](https://hackmd.io/x7zyXNyaSpOCRz8TGadleg)
- - [next pad]
+ - [next pad](https://hackmd.io/RzaiSq4QTHWTTSQSSVrmyg)
