@@ -1,6 +1,10 @@
 ### Zoom Details
 
-- *will be posted here*
+#### Donnerstag, 3. Februar um 18:00 Uhr
+
+- [Zoom Link](https://uni-wuerzburg.zoom.us/j/91561212362?pwd=N1RsbmRkdm91bXhWVzExdUdkRnhaUT09)
+- **Meeting ID:** 915 6121 2362
+- **Password:** 254013
 
 |    i | Date       | Tool       | Expert     | Title | Dataset  | DE/EN   | Result |
 | ---: | ---------- | ---------- | ---------- | ----- | -------- | ------- | ------ |
