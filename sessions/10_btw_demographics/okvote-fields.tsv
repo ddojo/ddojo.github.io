@@ -1,0 +1,71 @@
+column	stimme	partei_beschreibung
+datum		Datum des Wahltermins
+wahl		Name der Wahl
+ags		AGS der Behörde
+gebiet-nr		Nummer des Wahlgebiets
+gebiet-name		Name des Wahlgebiets
+max-schnellmeldungen		Anzahl an insgesamt erwarteten Schnellmeldungen im Wahlgebiet
+anz-schnellmeldungen		Anzahl an bisher eingegangenen Schnellmeldungen im Wahlgebiet
+A1		Wahlberechtigte ohne Sperrvermerk 'W'
+A2		Wahlberechtigte mit Sperrvermerk 'W'
+A3		Wahlberechtigte nicht im Wählerverzeichnis
+A		Wahlberechtigte insgesamt
+B		Wähler
+B1		Wähler mit Wahlschein
+C	Erststimmen	Ungültige Erststimmen
+D	Erststimmen	Gültige Erststimmen
+E	Zweitstimmen	Ungültige Zweitstimmen
+F	Zweitstimmen	Gültige Zweitstimmen
+D1	Erststimmen	Christlich-Soziale Union in Bayern e.V.
+F1	Zweitstimmen	Christlich-Soziale Union in Bayern e.V.
+D2	Erststimmen	Sozialdemokratische Partei Deutschlands
+F2	Zweitstimmen	Sozialdemokratische Partei Deutschlands
+D3	Erststimmen	Alternative für Deutschland
+F3	Zweitstimmen	Alternative für Deutschland
+D4	Erststimmen	Freie Demokratische Partei
+F4	Zweitstimmen	Freie Demokratische Partei
+D5	Erststimmen	BÜNDNIS 90/DIE GRÜNEN
+F5	Zweitstimmen	BÜNDNIS 90/DIE GRÜNEN
+D6	Erststimmen	DIE LINKE
+F6	Zweitstimmen	DIE LINKE
+D7	Erststimmen	FREIE WÄHLER
+F7	Zweitstimmen	FREIE WÄHLER
+D8	Erststimmen	Ökologisch-Demokratische Partei
+F8	Zweitstimmen	Ökologisch-Demokratische Partei
+D9	Erststimmen	PARTEI MENSCH UMWELT TIERSCHUTZ
+F9	Zweitstimmen	PARTEI MENSCH UMWELT TIERSCHUTZ
+D10	Erststimmen	Bayernpartei
+F10	Zweitstimmen	Bayernpartei
+D11	Erststimmen	Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative
+F11	Zweitstimmen	Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative
+D12	Erststimmen	Piratenpartei Deutschland
+F12	Zweitstimmen	Piratenpartei Deutschland
+D13	Erststimmen	Nationaldemokratische Partei Deutschlands
+F13	Zweitstimmen	Nationaldemokratische Partei Deutschlands
+D14	Erststimmen	V-Partei³ - Partei für Veränderung, Vegetarier und Veganer
+F14	Zweitstimmen	V-Partei³ - Partei für Veränderung, Vegetarier und Veganer
+D15	Erststimmen	Partei für Gesundheitsforschung
+F15	Zweitstimmen	Partei für Gesundheitsforschung
+D16	Erststimmen	Marxistisch-Leninistische Partei Deutschlands
+F16	Zweitstimmen	Marxistisch-Leninistische Partei Deutschlands
+D17	Erststimmen	Deutsche Kommunistische Partei
+F17	Zweitstimmen	Deutsche Kommunistische Partei
+D18	Erststimmen	Basisdemokratische Partei Deutschland
+F18	Zweitstimmen	Basisdemokratische Partei Deutschland
+D19	Erststimmen	Bündnis C - Christen für Deutschland
+F19	Zweitstimmen	Bündnis C - Christen für Deutschland
+D20	Erststimmen	DER DRITTE WEG
+F20	Zweitstimmen	DER DRITTE WEG
+D21	Erststimmen	Die Urbane. Eine HipHop Partei
+F21	Zweitstimmen	Die Urbane. Eine HipHop Partei
+D22	Erststimmen	Liberal-Konservative Reformer
+F22	Zweitstimmen	Liberal-Konservative Reformer
+D23	Erststimmen	Partei der Humanisten
+F23	Zweitstimmen	Partei der Humanisten
+D24	Erststimmen	Team Todenhöfer – Die Gerechtigkeitspartei
+F24	Zweitstimmen	Team Todenhöfer – Die Gerechtigkeitspartei
+D25	Erststimmen	UNABHÄNGIGE für bürgernahe Demokratie
+F25	Zweitstimmen	UNABHÄNGIGE für bürgernahe Demokratie
+D26	Erststimmen	Volt Deutschland
+F26	Zweitstimmen	Volt Deutschland
+D27	Erststimmen	Einzelbewerber Schürer 
