@@ -1,6 +1,8 @@
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|   14 | 2022-07-14 | **TBD** | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   16 | 2022-09-08 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Decision Trees | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   15 | 2022-08-18 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): KNN | [pad](https://hackmd.io/RzSQOMptQcWwQunEzCmyCA)     | [result](sessions/15_ml_knn/knn.html)|
+|   14 | 2022-07-14 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): data preparation | [pad](https://hackmd.io/pjdM_fbYTfS-adOlpww8hg) | [result](sessions/14_trees/exploration.html)|
 |   13 | 2022-06-09 | [Spotify Listening History](https://www.spotify.com/ca-en/account/privacy/) | [pad](https://hackmd.io/AJll0xxrQXCPLwFqYZN4qA)     | [result](sessions/13_spotify/exploration_R.html)|
 |   12 | 2022-05-12 | [Spotify Listening History](https://www.spotify.com/ca-en/account/privacy/) | [pad](https://hackmd.io/nTIemnbQQqKBrqUlZ0rb9w)     | [python](sessions/12_spotify/exploration_python.html), [R](sessions/12_spotify/exploration_R.html), [kotlin] |
 |   11 | 2022-04-14 | [30DayChartChallenge](https://twitter.com/30DayChartChall/status/1509439977674915843) (relationships - 3D) | [pad](https://hackmd.io/okjtsFj2RDSLZ3ylW_C72w)     | [result](sessions/11_chart_3d_weather/relationship_3d_jl.html) |
