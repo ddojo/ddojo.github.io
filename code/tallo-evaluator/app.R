@@ -12,6 +12,9 @@ library(tidyverse)
 library(gt)
 library(mltools)
 
+theme_set(theme_light())
+options(repr.plot.res=300)
+
 truth <- read_tsv("../../sessions/14_trees/truth.tsv") %>%
   rename(truth=species) %>%
   mutate(truth=factor(truth,levels=unique(truth)))
@@ -55,7 +58,7 @@ server <- function(input, output) {
     
     read_tsv(dp) %>%
       mutate(pred=factor(species,levels=unique(truth$truth))) %>%
-      left_join(truth) %>%
+      right_join(truth) %>%
       mutate(correct=(truth==pred))
   })
   
@@ -76,11 +79,12 @@ server <- function(input, output) {
   
   output$metrics <- render_gt({
     pr <- get_pred()
-    acc <- pr %>% pull(correct) %>% mean
+    num_na <- sum(is.na(pr$correct))
+    acc <- pr %>% pull(correct) %>% mean(na.rm=T)
     matthew <- mcc(pr$pred, pr$truth)
     tibble(
-      metric=c("Accuracy","Matthew Correlation"),
-      value=c(acc, matthew)
+      metric=c("Accuracy","Matthew Correlation","Missing"),
+      value=c(acc, matthew, num_na)
     ) %>%
     gt() %>%
       data_color(
