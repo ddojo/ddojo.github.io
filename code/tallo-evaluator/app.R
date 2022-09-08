@@ -70,11 +70,11 @@ server <- function(input, output) {
       right_join(truth) %>%
       mutate(correct=(truth==pred))
     
-    if(input$name != ""){
+    if(isolate(input$name != "")){
       miss <- sum(is.na(pr$correct))/nrow(pr)
       acc <- pr %>% pull(correct) %>% mean(na.rm=T)
       matthew <- mcc(pr$pred, pr$truth)
-      new_result <- tibble(Name=input$name, Description=input$description, Date=lubridate::now(), Accuracy=acc, `Matthews Correlation`=matthew, Missing=miss)
+      new_result <- tibble(Name=isolate(input$name), Description=isolate(input$description), Date=lubridate::now(), Accuracy=acc, `Matthews Correlation`=matthew, Missing=miss)
       lb <- read_tsv("results.tsv") %>% bind_rows(new_result)
       lb %>% write_tsv("results.tsv")
       reloadTrigger(nrow(lb))
