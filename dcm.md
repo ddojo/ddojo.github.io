@@ -21,10 +21,10 @@ Are you interested in presenting, yourself? Awesome! Just send a mail to [Markus
 
 ## When and where?
 
-Thursdays at 6pm in Zoom (online).
+Thursdays at 4pm in Zoom (online).
 The exact dates depend on the availability of expert presenters and will be announced here.
 All details, including the zoom link will also be posted here.
-The regular duration of a Data Crunch Magic Event is 90 minutes.
+The regular duration of a Data Crunch Magic Event is 60-90 minutes.
 
 {% include_relative dcm_dates.md %}
 
