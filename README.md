@@ -9,22 +9,17 @@ Everyone is welcome to join, whether you are a student, researcher or practition
 As this event is supported by the ESF-ZDEX project, it is free of charge also if you are not a member of the University. See details [below in the ESF-ZDEX section](#esf-zdex).
 
 # When and Where
-On the second Thursday of each month at 6:00 pm online
+Every 6 weeks, in the CCTB seminar series from 11:00 am to 12:30 pm live at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).
 
-See the [current pad](https://go.uniwue.de/ddojo-pad) for details and zoom link.
-
-<!-- at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094). -->
-
-### Attention! We have not determined the perfect start time and duration, yet. So expect those to change from month to month until we settle for the time that works best for most participants. Furthermore, the Data Dojo starts as virtual only. We might move to a live format as soon as covid numbers allow it. Stay healthy!
+### Attention! We are currently testing the integration into the CCTB seminar series. The Data Dojo is still open to everyone who is interested.
 
 # Process
 
-| 2 h    | Example Process                                  |
+| 90 min | Example Process                                  |
 | ------ | ------------------------------------------------ |
-| 15 min | welcome, ice breaker                             |
 | 15 min | initial exploration, questions                   |
 | 60 min | analyze, coding-dojo-style (in small sub-groups) |
-| 30 min | present results, recap                           |
+| 15 min | present results, recap                           |
 
 ## What is coding-dojo style?
 
