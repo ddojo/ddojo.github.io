@@ -14,22 +14,18 @@ Dank der Unterstützung durch das ESF-ZDEX Projekt können auch Mitarbeiter\*inn
 <small>Um die Lesbarkeit dieser Website zu verbessern, wird im Folgenden das generische Femininum verwendet. Wir weisen aber noch mal ausdrücklich darauf hin, dass alle Menschen unabhängig von Ihrer Geschlechtsidentität beim Data Dojo gleichermaßen willkommen sind.</small>
 
 # Wann und wo?
-Jeweils am zweiten Donnerstag des Monats um 18:00 Uhr in Zoom (online).
 
-Details und den Zoom Link gibt es im [aktuellen Pad](https://go.uniwue.de/ddojo-pad).
+Alle 6 Wochen, mittwochs, im CCTB Seminar von 11:00 bis 12:30 Uhr, live im [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).
 
-<!-- at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094). -->
-
-### Achtung! Wir haben die endgültige Uhrzeit und Dauer noch nicht gefunden. Beides kann sich also von Monat zu Monat verändern bis wir die Werte gefunden haben die für alle Teilnehmerinnen am besten passt. Aktuell findet das Data Dojo rein online statt. Wenn es die Coronazahlen zulassen möchten wir evtl. auf ein Live-Format umsteigen.
+### Achtung! Wir testen gerade das Data Dojo in die CCTB Seminar Serie zu integrieren. Es ist aber weiterhin jede willkommen, die teilnehmen möchte.
 
 # Ablauf
 
-| 2 h    | Beispielablauf                               |
+| 90 min | Beispielablauf                               |
 | ------ | -------------------------------------------- |
-| 15 min | Willkommen, Ice Breaker                      |
 | 15 min | Datensatz Vorstellung, Fragestellungen       |
 | 60 min | Analyse, Coding-Dojo-Style (in Kleingruppen) |
-| 30 min | Vorstellung der Ergebnisse, Zusammenfassung  |
+| 15 min | Vorstellung der Ergebnisse, Zusammenfassung  |
 
 ## Was bedeutet Coding-Dojo-Style?
 
