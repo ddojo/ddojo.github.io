@@ -1,6 +1,5 @@
 ### Zoom Details
 
-[Zoomraum 13.10 16 Uhr](https://uni-wuerzburg.zoom.us/j/67315329439?pwd=QVBJMjdhd1EvWHFMSTFsY0E2Qm9xQT09)
 
 |    i | Date       | Tool       | Expert     | Title | Dataset  | DE/EN   | Result |
 | ---: | ---------- | ---------- | ---------- | ----- | -------- | ------- | ------ |
