@@ -1,6 +1,7 @@
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|   17 | 2022-10-13 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Decision Trees | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   18 | 2022-11-16 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): More Models | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   17 | 2022-10-05 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Decision Trees | [pad](https://hackmd.io/4QAkxPHvTQK03aaq3adtsw)     | [result](sessions/17_ml_trees/decision_trees.html) |
 |   16 | 2022-09-08 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Data Scaling | [pad](https://hackmd.io/lVcSkcNyROeMBtY5Xp_p_g) | [result](sessions/16_ml_scaling/MinMaxScaler.html) |
 |   15 | 2022-08-18 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): KNN | [pad](https://hackmd.io/RzSQOMptQcWwQunEzCmyCA)     | [result](sessions/15_ml_knn/knn.html)|
 |   14 | 2022-07-14 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): data preparation | [pad](https://hackmd.io/pjdM_fbYTfS-adOlpww8hg) | [result](sessions/14_trees/exploration.html)|
