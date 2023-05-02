@@ -1,6 +1,7 @@
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|   21 | 2023-04-12 | TBD | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   22 | 2023-05-31 | TBD | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   21 | 2023-04-12 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Neural Networks | [pad](https://hackmd.io/56ffavSMSq2qN3gmIVbFXg)     | [result](sessions/21_ml_neural_network//neural_network.html) |
 |   20 | 2023-03-01 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Missing Data | [pad](https://hackmd.io/eijAVY_WSdqdk2wc2ywpjw) | [result](sessions/20_ml_missing_data/missing_data.html) |
 |   19 | 2023-01-18 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Ensemble Models | [pad](https://hackmd.io/dDQWijGVQC-K2MGeUGcGOg) | [result](sessions/19_ml_ensemble/ensemble.html) |
 |   18 | 2022-11-16 | ML Series: [Tallo Tree Data](https://zenodo.org/record/6637599): Support Vector Machines | [pad](https://hackmd.io/QjuLyc8uTe24aDCvtiN0pA) | [result](sessions/18_ml_svm/more_models.html) |
