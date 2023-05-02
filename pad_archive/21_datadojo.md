@@ -3,14 +3,9 @@
 ## DataDojo@Lunch - live
 
 ## April 2023
- - **When:** Wednesday, April 12<sup>th</sup>, 2022 at 11:00am until 12:30pm (90 minutes)
+ - **When:** Wednesday, April 12<sup>th</sup>, 2023 at 11:00am until 12:30pm (90 minutes)
  - **Where:** [CCTB](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+(CCTB),+University+of+W%C3%BCrzburg/@49.7850742,9.9723819,19z/data=!3m1!4b1!4m5!3m4!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094!8m2!3d49.7851122!4d9.9730135) or online (CCTB Seminar Zoom Link)
  - **Info:** [DataDojo Website](https://ddojo.github.io/), [Repo](https://github.com/ddojo/ddojo.github.io)
-
-## Participants
-> Please add your name to the list (click the pen icon at the top left to edit) if you plan to come. And please remove it if you can not make it. Feel free to add your preferred tool or programming language.
- - Markus (python/scikit-learn)
- - **» Add your name here «**
 
 ## Dataset
 
@@ -36,10 +31,10 @@ In the sixth dojo we used ensemble models, including Ada boosting and random for
 
 In the seventh dojo we used imputation methods to also make predictions for cases with missing data.
 
-#### Session 8 - TBD
+#### Session 8 - Neural Networks
 Ideas:
 - Hyperparameter tuning (cross validation and grid search)
-- NeuralNetworks
+- Neural Networks
 - experiment tracking (e.g. mlflow)
 - auto ml (e.g. optuna)
 - inference/deployment (e.g. on hugging face spaces)
@@ -113,4 +108,4 @@ For Notebooks (R, python, julia, js, ...) with real time collaboration [CoCalc](
 
 ## Cross Links
  - [previous pad](https://hackmd.io/eijAVY_WSdqdk2wc2ywpjw)
- - [next pad]
+ - [next pad](https://hackmd.io/CfXKMAfiS9KMtKbi3Z9m1g)
