@@ -1,24 +1,25 @@
-i	partic.	male	female	diverse	zdex	uni_wue	groups	languages	format
-0	5	2	3	0	0	4	1	R	virtual
-1	4	4	0	0	0	1	1	R	virtual
-2	3	3	0	0	0	2	1	PowerBI,R	virtual
-3	3	2	1	0	1	2	1	python	virtual
-4	3	3	0	0	0	2	1	R	virtual
-5	1	1	0	0	0	1	1	R	virtual
-6	1	1	0	0	0	1	1	julia	virtual
-7	3	3	0	0	0	3	1	julia	virtual
-8	2	2	0	0	0	2	1	julia	virtual
-9	8	6	2	0	0	8	3	julia,python,R	virtual
-10	2	2	0	0	0	2	1	R	virtual
-11	4	4	0	0	0	4	1	julia	virtual
-12	10	8	2	0	0	10	3	python,R,kotlin	virtual
-13	7	6	1	0	0	7	1	R	live
-14	8	7	1	0	0	8	1	R	live
-15	7	6	1	0	0	7	1	python	live
-16	5	5	0	0	0	5	1	python	live
-17	9	7	2	0	0	9	1	python	hybrid
-18	11	8	3	0	0	11	1	python	hybrid
-19	11	8	3	0	NA	11	1	python	hybrid
-20	12	9	3	0	NA	12	1	python	hybrid
-21	12	6	6	0	NA	12	1	python	hybrid
-22	15	12	3	0	NA	15	2	julia	hybrid
+i	date	participants	male	female	diverse	zdex	uni_wue	groups	languages	format
+23	2023-07-19	13	9	4	0	NA	13	3	julia,R	hybrid
+22	2023-05-31	15	12	3	0	NA	15	2	julia	hybrid
+21	2023-04-12	12	6	6	0	NA	12	1	python	hybrid
+20	2023-03-01	12	9	3	0	NA	12	1	python	hybrid
+19	2023-01-18	11	8	3	0	NA	11	1	python	hybrid
+18	2022-11-16	11	8	3	0	0	11	1	python	hybrid
+17	2022-10-05	9	7	2	0	0	9	1	python	hybrid
+16	2022-09-08	5	5	0	0	0	5	1	python	live
+15	2022-08-18	7	6	1	0	0	7	1	python	live
+14	2022-07-14	8	7	1	0	0	8	1	R	live
+13	2022-06-09	7	6	1	0	0	7	1	R	live
+12	2022-05-12	10	8	2	0	0	10	3	python,R,kotlin	virtual
+11	2022-04-14	4	4	0	0	0	4	1	julia	virtual
+10	2022-03-10	2	2	0	0	0	2	1	R	virtual
+9	2022-02-10	8	6	2	0	0	8	3	julia,python,R	virtual
+8	2022-01-13	2	2	0	0	0	2	1	julia	virtual
+7	2021-12-09	3	3	0	0	0	3	1	julia	virtual
+6	2021-11-09	1	1	0	0	0	1	1	julia	virtual
+5	2021-10-14	1	1	0	0	0	1	1	R	virtual
+4	2021-09-09	3	3	0	0	0	2	1	R	virtual
+3	2021-08-12	3	2	1	0	1	2	1	python	virtual
+2	2021-07-08	3	3	0	0	0	2	1	PowerBI,R	virtual
+1	2021-06-10	4	4	0	0	0	1	1	R	virtual
+0	2021-05-26	5	2	3	0	0	4	1	R	virtual
