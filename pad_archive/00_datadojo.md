@@ -54,4 +54,4 @@ Live Share: https://prod.liveshare.vsengsaas.visualstudio.com/join?E6DF7467103DB
 
 ## Cross Links
 
- - [next pad]
+ - [next pad](https://ddojo.github.io/pad_archive/01_datadojo)

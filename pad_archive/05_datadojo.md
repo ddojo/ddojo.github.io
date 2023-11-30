@@ -95,5 +95,5 @@ Feel free to add suggestions to this list
 
 
 ## Cross Links
- - [previous pad](https://hackmd.io/5iIuyuHnRZOWOH88cFFeCA)
- - [next pad](https://hackmd.io/cEQTuiwfSk6gSuT3uS4QkA)
+ - [previous pad](https://ddojo.github.io/pad_archive/04_datadojo)
+ - [next pad](https://ddojo.github.io/pad_archive/06_datadojo)

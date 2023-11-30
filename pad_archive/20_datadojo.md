@@ -121,5 +121,5 @@ For Notebooks (R, python, julia, js, ...) with real time collaboration [CoCalc](
 
 
 ## Cross Links
- - [previous pad](https://hackmd.io/dDQWijGVQC-K2MGeUGcGOg)
- - [next pad](https://hackmd.io/56ffavSMSq2qN3gmIVbFXg)
+ - [previous pad](https://ddojo.github.io/pad_archive/19_datadojo)
+ - [next pad](https://ddojo.github.io/pad_archive/21_datadojo)

@@ -71,5 +71,5 @@ Hi Timo, thanks for letting me know. It will not be as long as usual (probably o
 
 
 ## Cross Links
- - [previous pad](https://hackmd.io/FUJE2rSHRHiqu-v1Vgg-gg)
- - [next pad](https://hackmd.io/nEtqtdxPTRajJKysKSykQQ)
+ - [previous pad](https://ddojo.github.io/pad_archive/00_datadojo)
+ - [next pad](https://ddojo.github.io/pad_archive/02_datadojo)

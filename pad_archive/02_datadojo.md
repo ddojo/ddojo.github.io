@@ -89,5 +89,5 @@ Question Pool:
 
 
 ## Cross Links
- - [previous pad](https://hackmd.io/qUl1BnMBRCGJpGR6uuFiQA)
- - [next pad](https://hackmd.io/AfCChD1jTCiPY4dFztgvNw)
+ - [previous pad](https://ddojo.github.io/pad_archive/01_datadojo)
+ - [next pad](https://ddojo.github.io/pad_archive/03_datadojo)
