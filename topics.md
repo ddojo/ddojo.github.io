@@ -1,6 +1,7 @@
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|   29 | 2024-09-04 | Mattermost Lunch Channel History - Part II | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   30 | 2024-09-18 | TBD | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   29 | 2024-09-04 | Mattermost Lunch Channel History - Part II | [pad](pad_archive/29_datadojo)     | results: [python](sessions/29_mattermost/python.html), [R](sessions/29_mattermost/R.html) |
 |   28 | 2024-07-03 | Mattermost Lunch Channel History - Part I | [pad](pad_archive/28_datadojo)     | results: [python 1](sessions/28_mattermost/kitchen-group.html), [python 2](sessions/28_mattermost/seminarroom.html) |
 |   27 | 2024-04-17 | CCTB Server Usage | [pad](pad_archive/27_datadojo)     | results: [python](sessions/27_cluster_usage/python.html), [julia](sessions/27_cluster_usage/juliagroup.html), [R](sessions/27_cluster_usage/R-group.html)  |
 |   26 | 2024-01-31 | [Abgeordnetenwatch](https://www.abgeordnetenwatch.de/api) | [pad](pad_archive/26_datadojo)     | results: [python 1](sessions/26_abgeordnetenwatch/early_birds.html), [python 2](sessions/26_abgeordnetenwatch/teamsummer.html)  |
