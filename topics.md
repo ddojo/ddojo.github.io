@@ -1,6 +1,7 @@
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|   31 | 2024-11-13 | TBD | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   32 | 2025-01-22 | TBD | [pad](https://go.uniwue.de/ddojo-pad)     | |
+|   31 | 2024-11-13 | [Zombies](https://www.kaggle.com/datasets/kingabzpro/zombies-apocalypse) | [pad](pad_archive/31_datadojo)     | results: [python](sessions/31_zombies/python.html), [R](sessions/31_zombies/R.html), [julia](sessions/31_zombies/julia.html) |
 |   30 | 2024-09-18 | Mattermost Lunch Channel History - Part III | [pad](pad_archive/30_datadojo)     | results: [python](sessions/30_mattermost/python.html), [R](sessions/30_mattermost/R.html) |
 |   29 | 2024-09-04 | Mattermost Lunch Channel History - Part II | [pad](pad_archive/29_datadojo)     | results: [python](sessions/29_mattermost/python.html), [R](sessions/29_mattermost/R.html) |
 |   28 | 2024-07-03 | Mattermost Lunch Channel History - Part I | [pad](pad_archive/28_datadojo)     | results: [python 1](sessions/28_mattermost/kitchen-group.html), [python 2](sessions/28_mattermost/seminarroom.html) |
