@@ -3,6 +3,9 @@
 
 library(tidyverse)
 
+# demonstrate the underestimation of σ by s:
+mean(replicate(10000, sd(rnorm(5)))) # is less than 1
+
 # Fig 3.c
 x <- seq(0,5,0.1)
 crossing(x, df=c(2,3,4,9,19)) |> mutate(t=2-2*pt(x, df=df), df=as.factor(df)) |> bind_rows(tibble(x=x, df="norm", t=2-2*pnorm(x))) |> ggplot(aes(x,t,col=df)) + geom_line()

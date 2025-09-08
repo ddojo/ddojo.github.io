@@ -46,7 +46,15 @@ Please read [Significance, P values and t-tests](https://www.nature.com/articles
 ### Comprehension Questions
 
 - True or false:
-    - TODO
+    - the P value reported by tests is a biological significance
+    - the P value is the probability that the null hypothesis (H0) is true
+    - a small P value tells us that an improbable event has occurred in the context of the assumption that H0 was true and that x was drawn from H0
+    - statistical significance suggests but does not imply biological significance
+    - regardless of whether the sample mean is representative of the null distribution, we assume that its spread is [representative of the null distribution]
+    - the shape of the sampling distribution (of the test statistic $t=\frac{m-\mu}{s/\sqrt(n)}$) is close to, but not exactly, normal
+    - the departure in distribution shape is due to the fact that for most samples, the sample variance, $s^2$, is an underestimate of the variance of the null distribution
+    - `mean(replicate(10000, sd(rnorm(5)))) ≈ 1`
+    
 
 ### Tasks
 
