@@ -55,6 +55,18 @@ Please read [Significance, P values and t-tests](https://www.nature.com/articles
     - the departure in distribution shape is due to the fact that for most samples, the sample variance, $s^2$, is an underestimate of the variance of the null distribution
     - `mean(replicate(10000, sd(rnorm(5)))) ≈ 1`
     
+```uiua
+# BoxMuller from https://github.com/Omnikar/uiua-math
+BoxMuller ← ∩×⤙⊓°∠∘×τ:√×¯2°ₑ¬
+
+μ ← ÷⊃⧻(/+)
+σ ← √÷-1⊃⧻(/+)×.-⊸μ
+𝒩 ← ◌ BoxMuller°⊟ gen :⚂⊟2
+
+# Draw 10k normal samples of size n=5
+≡𝒩 ⍥5 10000
+μ≡σ
+```
 
 ### Tasks
 
