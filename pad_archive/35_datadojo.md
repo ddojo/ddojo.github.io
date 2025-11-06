@@ -7,7 +7,7 @@ title: Data Dojo Würzburg 35
 
 ## DataDojo@Lunch - live
 
-## October 2025
+## September 2025
  - **When:** Wednesday, **September 17<sup>th</sup>**, 2025 at 11:00am until 12:30pm (90 minutes) 
  - **Where:** [CCTB](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+(CCTB),+University+of+W%C3%BCrzburg/@49.7850742,9.9723819,19z/data=!3m1!4b1!4m5!3m4!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094!8m2!3d49.7851122!4d9.9730135) or online (ask for hybrid setup and link)
  - **Info:** [DataDojo Website](https://ddojo.github.io/), [Repo](https://github.com/ddojo/ddojo.github.io)
@@ -28,7 +28,7 @@ So, as before, it will be hands-on and 90 minutes, so feel free to bring your lu
 Currently a dumb version (does not take experience level and language preferences into account).
 
 ```uiua
-"Caro Sascha Axel Joana Felix Jannis Magdalena Markus"
+"Vinzenz Sebastian Felix Jannis Magdalena Isabella"
 ⍉⬚""↯⊟2⌈÷2⊸⧻°⍆⊜□⊸≠@ 
 ```
 
@@ -51,7 +51,7 @@ Please read [Significance, P values and t-tests](https://www.nature.com/articles
     - a small P value tells us that an improbable event has occurred in the context of the assumption that H0 was true and that x was drawn from H0
     - statistical significance suggests but does not imply biological significance
     - regardless of whether the sample mean is representative of the null distribution, we assume that its spread is [representative of the null distribution]
-    - the shape of the sampling distribution (of the test statistic $t=\frac{m-\mu}{s/\sqrt(n)}$) is close to, but not exactly, normal
+    - the shape of the sampling distribution (of the test statistic $t=\frac{m-\mu}{s/\sqrt{n}}$) is close to, but not exactly, normal
     - the departure in distribution shape is due to the fact that for most samples, the sample variance, $s^2$, is an underestimate of the variance of the null distribution
     - `mean(replicate(10000, sd(rnorm(5)))) ≈ 1`
     
@@ -65,12 +65,15 @@ BoxMuller ← ∩×⤙⊓°∠∘×τ:√×¯2°ₑ¬
 
 # Draw 10k normal samples of size n=5
 ≡𝒩 ⍥5 10000
+# Calculate the mean of the standard deviations
 μ≡σ
 ```
 
 ### Tasks
 
 #### Task 1 - why not use z for t? - or the difference between s and σ
+
+**go.uniwue.de/ddojo-pad**
 
 Reproduce Supplementary Figure 4
 ![image](https://hackmd.io/_uploads/By7GrU3qex.png)
