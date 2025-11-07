@@ -15,7 +15,7 @@ Dank der Unterstützung durch das ESF-ZDEX Projekt können auch Mitarbeiter\*inn
 
 # Wann und wo?
 
-Alle 6 Wochen, mittwochs, im CCTB Seminar von 11:00 bis 12:30 Uhr, live im [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).
+Ab 2026 gibt es einen neuen Rhythmus (vermutlich immer am 1. Dienstag des Monats) von 12:00 bis 13:30 Uhr, live im [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).
 
 ### Achtung! Wir testen gerade das Data Dojo in die CCTB Seminar Serie zu integrieren. Es ist aber weiterhin jede willkommen, die teilnehmen möchte.
 
