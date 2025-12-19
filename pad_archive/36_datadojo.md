@@ -1,14 +1,14 @@
 ---
-title: Data Dojo Würzburg 35
+title: Data Dojo Würzburg 36
 
 ---
 
-# Data Dojo Würzburg 35
+# Data Dojo Würzburg 36
 
 ## DataDojo@Lunch - live
 
-## September 2025
- - **When:** Wednesday, **September 17<sup>th</sup>**, 2025 at 11:00am until 12:30pm (90 minutes) 
+## November 2025
+ - **When:** Wednesday, **November 11<sup>th</sup>**, 2025 at 11:11am until 12:41pm (90 minutes) 
  - **Where:** [CCTB](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+(CCTB),+University+of+W%C3%BCrzburg/@49.7850742,9.9723819,19z/data=!3m1!4b1!4m5!3m4!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094!8m2!3d49.7851122!4d9.9730135) or online (ask for hybrid setup and link)
  - **Info:** [DataDojo Website](https://ddojo.github.io/), [Repo](https://github.com/ddojo/ddojo.github.io)
 
@@ -28,7 +28,7 @@ So, as before, it will be hands-on and 90 minutes, so feel free to bring your lu
 Currently a dumb version (does not take experience level and language preferences into account).
 
 ```uiua
-"Vinzenz Sebastian Felix Jannis Magdalena Isabella"
+"Sascha Mike Felix Diep Magdalena Caro"
 ⍉⬚""↯⊟2⌈÷2⊸⧻°⍆⊜□⊸≠@ 
 ```
 
@@ -94,5 +94,5 @@ Go through chapters of one of these books
 With a stronger focus on coding rather than data analysis, there is [a nice collection of Katas](https://codingdojo.org/kata/)
 
 ## Cross Links
- - [previous pad](https://ddojo.github.io/pad_archive/34_datadojo)
- - [next pad](https://ddojo.github.io/pad_archive/36_datadojo)
+ - [previous pad](https://ddojo.github.io/pad_archive/35_datadojo)
+ - [next pad](https://ddojo.github.io/pad_archive/37_datadojo)
