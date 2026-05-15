@@ -15,9 +15,11 @@ Dank der Unterstützung durch das ESF-ZDEX Projekt können auch Mitarbeiter\*inn
 
 # Wann und wo?
 
-Ab 2026 gibt es einen neuen Rhythmus (vermutlich immer am 1. Dienstag des Monats) von 12:00 bis 13:30 Uhr, live im [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).
+Neuer Rhythmus: immer am dritten Montag des Monats, von 12:00 bis 13:30 live in der John-Skilton-Straße 4a (04.B.32) <!--[CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).-->
 
 ### Achtung! Wir testen gerade das Data Dojo in die CCTB Seminar Serie zu integrieren. Es ist aber weiterhin jede willkommen, die teilnehmen möchte.
+
+Wir probier aktuell den Data Crunch Dojo aus — wir verwenden den Data Dojo Style um Challenges für den [Data Crunch Cup](https://dccw.de) zu erstellen.
 
 # Ablauf
 

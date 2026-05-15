@@ -8,7 +8,7 @@ We strive to be an open and inclusive community, everyone is welcome! We have a 
 Everyone is welcome to join, whether you are a student, researcher or practitioner from industry. Also all experience levels, backgrounds and tool preferences are welcome!
 
 # When and Where
-New schedule coming up in 2026 (probably every first Tuesday of the month), 12:00 am to 1:30 pm live at the [CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).
+New schedule: every third Monday of the month, 12:00 am to 1:30 pm live at the John-Skilton-Straße 4a (04.B.32) <!--[CCTB Würzburg](https://www.google.de/maps/place/Center+for+Computational+and+Theoretical+Biology+%28CCTB%29,+University+of+W%C3%BCrzburg/@49.7851224,9.9708763,17z/data=!3m1!4b1!4m2!3m1!1s0x47a28fc802e5e8d9:0x6b62d2cbd2e6f094).-->
 
 # Process
 
@@ -19,6 +19,8 @@ New schedule coming up in 2026 (probably every first Tuesday of the month), 12:0
 | 15 min | present results, recap                           |
 
 ### Attention! We are currently experimenting with variations of this process
+
+We are currently testing the Data Crunch Dojo — using Data Dojo style to create challenges for the [Data Crunch Cup](https://dccw.de).
 
 ## What is coding-dojo style?
 
