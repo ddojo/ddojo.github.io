@@ -1,6 +1,7 @@
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|   37 | 2026 | TBD | [pad](https://go.uniwue.de/ddojo-pad) | |
+|   38 | 2026-06-15 | Data Crunch Dojo — Implementation | [pad](http://10.87.174.31:3000/DCHf8KieT9C_KfrTWBdmNw) | |
+|   37 | 2026-05-18 | Data Crunch Dojo — Brainstorming | [pad](pad_archive/37_datadojo) | |
 |   36 | 2025-11-11 | Riddle "How many children?" / [Josephus problem](https://en.wikipedia.org/wiki/Josephus_problem) | [pad](pad_archive/36_datadojo) | [julia](sessions/36_riddle/childre_riddle.ipynb) |
 |   35 | 2025-09-17 | [Points of Significance](https://www.nature.com/collections/qghhqm/pointsofsignificance) - [Significance, P values and t-tests](https://www.nature.com/articles/nmeth.2698) | [pad](pad_archive/35_datadojo) | [R](sessions/35_PoS_significance/experiments.R), [Uiua](sessions/35_PoS_significance/histogram.ua) |
 |   34 | 2025-06-18 | [Points of Significance](https://www.nature.com/collections/qghhqm/pointsofsignificance) - [Error bars](https://www.nature.com/articles/nmeth.2659) | [pad](pad_archive/34_datadojo)  | [python](https://marimo.app/?slug=2wta8c), [python (2)](https://marimo.app/l/0w8win) |
