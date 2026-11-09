@@ -1,6 +1,10 @@
 |    i | Date       | Summary                                                                                                                       | Pad                                             | Result                                                                   |
 | ---: | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-|   38 | 2026-06-15 | Data Crunch Dojo — Implementation | [pad](http://10.87.174.31:3000/DCHf8KieT9C_KfrTWBdmNw) | |
+|   42 | 2026-11-16 | Data Crunch Dojo — Image Puzzle III | [pad](http://10.87.174.31:3000/DCHf8KieT9C_KfrTWBdmNw) | challenge in DCCW 2027 |
+|   41 | 2026-10-27 | Data Crunch Dojo — Image Puzzle II | | challenge in DCCW 2027 |
+|   40 | 2026-09-27 | Data Crunch Dojo — Image Puzzle | | challenge in DCCW 2027 |
+|   39 | 2026-07-27 | Data Crunch Dojo — Parrondo | | challenge in DCCW 2027 |
+|   38 | 2026-06-15 | Data Crunch Dojo — Implementation | | |
 |   37 | 2026-05-18 | Data Crunch Dojo — Brainstorming | [pad](pad_archive/37_datadojo) | |
 |   36 | 2025-11-11 | Riddle "How many children?" / [Josephus problem](https://en.wikipedia.org/wiki/Josephus_problem) | [pad](pad_archive/36_datadojo) | [julia](sessions/36_riddle/childre_riddle.ipynb) |
 |   35 | 2025-09-17 | [Points of Significance](https://www.nature.com/collections/qghhqm/pointsofsignificance) - [Significance, P values and t-tests](https://www.nature.com/articles/nmeth.2698) | [pad](pad_archive/35_datadojo) | [R](sessions/35_PoS_significance/experiments.R), [Uiua](sessions/35_PoS_significance/histogram.ua) |
